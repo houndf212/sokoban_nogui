@@ -1,0 +1,1203 @@
+Curry 0.3 solution file
+===========================
+Collection: sasquatch I
+
+Sasquatch I - 1
+
+   ###     
+  ## # ####
+ ##  ###  #
+## $      #
+#   @$ #  #
+### $###  #
+  #  #..  #
+ ## ##.# ##
+ #      ## 
+ #     ##  
+ #######   
+
+Solution
+lluRRRRRlllldddddrrruurrruuuulDDullllldddrUUlddddrrruurrruuullllLulDDDDDuruuurrrrrdddlllddlldlluRdrruruurrruuullldLLdlUluRRRRRllllddddddrrruuurrruulDrdLLrruuuulDDDrdLuuullllldddddRRdrU
+
+Solver: Curry 0.3
+Solver time: 00:00:02
+Solver date: 2021-08-17  10:45:10
+
+
+Sasquatch I - 2
+
+ ## #####
+## ## . #
+# ## $. #
+ ## $   #
+## $@ ###
+# $  ##  
+#.. ## ##
+#   # ## 
+##### #  
+
+Solution
+ruruulDlDlDDulDruururrdLdLdlluRuRRllddrUluRdrUluRldldldlddrrUUdLrururuuurrddLUllddrUluRldlDrdLulD
+
+Solver: Curry 0.3
+Solver time: 00:00:03
+Solver date: 2021-08-17  10:45:13
+
+
+Sasquatch I - 3
+
+           #####
+          ##   #
+          #    #
+    ####  # $ ##
+    #  ####$ $# 
+    #     $ $ # 
+   ## ## $ $ $# 
+   #  .#  $ $ # 
+   #  .#      # 
+##### ######### 
+#.... @  #      
+#....    #      
+##  ######      
+ ####           
+
+Solution
+luuuuurrrddrdrrrruLuLuUdLLLLLulDDDDDDrdLLLdlUluRRRdrUUUluRuurrrddrUddrrruululLLLLulDDDDDDrdLLLdlUruLrrruuuuurrrrrrurDDuuUruulDDDDrUUldlddLLdlUruLLLulDDDDDDrdLLullddrUrruuuuuurrrrdddrrUUluRurrdLLLLLLLulDDDDDDrdLLLLrrruuuuuurrrrrrruuulDDrdLLLLLLulDDDDDDldlluRRdRRurrdLLLLullddrUrrruLuuuuurrrrrrruuuurrdLulDDDrdLLLLLLLulDDDDDDrdLLLdlUrrruuuuuurrrrrrdddrruUUUUluurrdLulDDDrdLLLLLLLulDDDldRuuurrrrdddrUUruLLLLLulDDDDDDrdLLLrruuuuuurrrrrrrrdLLLLdlUruLLLulDDDDDDrdLLruuuuuurrrrrrdddrUUruLLLLLLLulDDDDDDrdL
+
+Solver: Curry 0.3
+Solver time: 00:00:34
+Solver date: 2021-08-17  10:45:47
+
+
+Sasquatch I - 4
+
+  ###########
+ ##     #  @#
+### $ $$#   #
+# ##$    $$ #
+#  #  $ #   #
+###### ######
+#.. ..$ #*## 
+# ..    ###  
+#  ..#####   
+#########    
+
+Solution
+dddllUdrUllllluurDldRRRRllluullldRRddlUrrrdLdDrdLLLdlUluRRdrruuuuluurDDDDDrdLLLulDldRurrruuuulldRurDDDrdLLLulDrrruuururrdrruLLLLdlluurDDDDrdLLLLullddrUluRRdrrruuururrrruullDurrddlLLLdlluurDDDDrdLLLLullddrUrrrruuururruurDrdLLLLdlluurDDDDrdLLLLLdlUrrrrruuuuuullldRRurDDDDDrdLLLLrrruuuuuurDldRRRurrdLLLLulDDDDrdLLL
+
+Solver: Curry 0.3
+Solver time: 00:00:11
+Solver date: 2021-08-17  10:45:58
+
+
+Sasquatch I - 5
+
+  ###########  
+ ##    #    ## 
+### $ $#$ $ ###
+# #$ $ # $ $# #
+# $  ..#..  $ #
+#  $...#...$  #
+# $ .. * .. $ #
+###### @ ######
+# $ ..   .. $ #
+#  $...#...$  #
+# $  ..#..  $ #
+# #$ $ # $ $# #
+### $ $#$ $ ###
+ ##    #    ## 
+  ###########  
+
+
+Solver: Curry 0.3
+Solver time: 02:00:01
+Solver date: 2021-08-17  12:45:59
+
+
+Sasquatch I - 6
+
+  ###########  
+###.  .$.  .###
+ ## $  $  $ ## 
+  ## ..$.. ##  
+   ##$#$#$##   
+    #.$ $.#    
+    #  @  #    
+    ### ###    
+   ## $ $ ##   
+   #.  $  .#   
+   ### . ###   
+     #####     
+
+Solution
+lluUUrRRllldddrrddDuuulluuulUdrruulLrrddrrururrdLulldLdllluurrDuRRRRllllllddrdddrruUUruLulllddrUddddrruuuuulrddddddddrruLdlUUUUUUruulDDDDDDDrdLLLuRdrUUUUUUruulDDDDDDDldRRRulluuuLruuLrruurrdLullddrUlulDlluRdrrrrrdLullddddrruUddlluR
+
+Solver: Curry 0.3
+Solver time: 00:29:39
+Solver date: 2021-08-17  13:15:39
+
+
+Sasquatch I - 7
+
+           ######  
+    ####  ##    #  
+  ###  #  #  ## ###
+###    #### #   $ #
+#  $ @ ...*..  $  #
+# $ $  ## ###   ###
+### ###   # #####  
+ #      ###        
+ #   ####          
+ #####             
+
+Solution
+rrrrRRuururrrddlldLLLLLLLdlUlulDDDuurrrrrrrrrrrdrUUlldlllllllllldRurrrrrrrrrrrrruLLdlllluururrrDDrdLLLLLLLLLLrrrrrrruRldlluururrrdDrdLLLrruuullldlddllddlldllldlluRRluuruRRRRRRllllllllldRurDrurrrrrddlldlLLdlluRRlUUluRdrUrrrrrddlldlLLdlUUUluRRRRRRRllldLLrrurrrddlldlllluUluRRRRRRlluulDrddlluRRRlllluRRurDldR
+
+Solver: Curry 0.3
+Solver time: 00:00:15
+Solver date: 2021-08-17  13:15:54
+
+
+Sasquatch I - 8
+
+    #######  
+    #     ## 
+##### ###  ##
+#       #  ##
+#@$***. ##$ #
+#  #    ## .#
+##  ##  # $ #
+ ##  ####.$.#
+  ##        #
+   ######  ##
+        #### 
+
+Solution
+drdrdrdrrrrruuRlddrruUdLdllllllulululuurrrruurrrrdrdDDDuuuulullllddrddllUdrruulLruurrrrdrddddlDuruuuulullllddldRdrUluuurrrrdrddddldRddlUlllllulululuurRRlllddrdrdrdrrrrrruuuuuululllldDDldRurruLdllulllddrdrdrdrrrrrruuuuuululllldDrdLullllddrUluRRRlldddrdrdrrrrrruuuuuululllldDrrdddlU
+
+Solver: Curry 0.3
+Solver time: 00:00:09
+Solver date: 2021-08-17  13:16:03
+
+
+Sasquatch I - 9
+
+#########
+#. .    #
+#.$. .  #
+## ###@ #
+ #  $  ##
+ # $$ ## 
+ #  $ #  
+ #  ###  
+ ####    
+
+Solution
+uullllldRRRRurrddldlddLLdlUUUUdddrrruururuulllllldRRRllddrDuluurrurrrddldlddlLdlUUUUUluRdrrurrrddldlLLdlUUdrrrruruullldlLuRRlldddrrrdLLdlUUUUruLdddrrrruruulDLLulldddrrrrUruLuLL
+
+Solver: Curry 0.3
+Solver time: 00:00:04
+Solver date: 2021-08-17  13:16:07
+
+
+Sasquatch I - 10
+
+      ######      
+      #    #      
+      # @  ###    
+####  #      #    
+#  ####..#.#$#####
+# $ $ ##...      #
+#     .....#$$   #
+###### ##$## #####
+     #  $    #    
+     #### ####    
+       #  #       
+       #  #####   
+     ### $    #   
+     #  $ $   #   
+     # #$# ####   
+     #     #      
+     #######      
+
+Solution
+dddrdDDDDlddRRRdrruLLLLdRRullUUUUUUruLdlUUUruLulDDrddrdddddddrdddlllluurRRlllddrrrruUruLdlUUUUUUUluRluurrdDlldllllllluurDldRRRRRRRurDDDDDDDrdddlllluurrRlllddrrrruUruLdlUUUUUUUluuurrddLdlUUUluRdrrrrDullddrRRRdrruLLLLLLLdlUUUdddllddrRlluurrrdDDDDDrdddlllluurrRlllddrrrruUruLdlUUUUUUUluuurrddLdlUUdrruuuulllddRdddllluLLdlluurDldRRRRRddrrruulLrrddrrruUddllluuurrRRRllllldddddldDrrdddlllluurRRlllddrrrruUruLdlUUUUUUUddrrruuullLruuuulllddrdDrdLrddddddrdddllUdlluurRRlddrruUruLdlUUUUUUUddrrruuullLruuuulllddrdDrrrrrrdLulllldddrrruUruLLLLdddddddrrrrdLLullldddrruUruLdlUUUUUUdrrruuuuulluulllddrRlluurrrdDDurrddlLuuuullDDrrrrddrrdrruLLLLLruulllluRurDD
+
+Solver: Curry 0.3
+Solver time: 00:03:04
+Solver date: 2021-08-17  13:19:11
+
+
+Sasquatch I - 11
+
+  ####     
+###  ####  
+#   @   ## 
+# #. .#.###
+# $$$ $$$ #
+###.#.#.# #
+ ##       #
+  ####  ###
+     ####  
+
+Solution
+rddddrruUddlllluUUrrdddrruuLrddlllluuurrDDuulldddrRRdrUrruuLLLrrrddlllllluuurrDLulDruuulDllddRRUdlluurRurDrddrrrrddllllllUUUdddrrrrrruulllluulLrrddLruulldDuRldlluuRlddrrruuulD
+
+Solver: Curry 0.3
+Solver time: 00:00:06
+Solver date: 2021-08-17  13:19:17
+
+
+Sasquatch I - 12
+
+              #####        
+              #   #        
+    #####     #   #######  
+    #   ##### #   ..... #  
+##### # ##  # #     # # #  
+# $ $ $ $ $ # ##   ## $ #  
+# # ##......#### ### $$ ###
+#      ## * #    # #  $$  #
+##########+$$   ## #      #
+         #.$ $# #  ########
+         #.##   #          
+         ########          
+
+
+Solver: Curry 0.3
+Solver time: 02:00:01
+Solver date: 2021-08-17  15:19:18
+
+
+Sasquatch I - 13
+
+   #######  
+ ###     ## 
+ #   ###  # 
+ #      # # 
+###$#@  # # 
+#   ##### # 
+#   #  *. # 
+##$$#  *.## 
+ #     *..# 
+ #### #...##
+    # #$$$ #
+    #   $  #
+    #####  #
+        ####
+
+Solution
+uluurrrrdrddddldLrdrdDrddlUUUllUlllllUUddrrrrrruuLrddlllllluuruUddlddrrrrrruuruuuululllldlldRRRlldddlddrrrdddrrRllluuurrrdrdrddlUllUUddlluuurRdrUldddrUluRulllllluuruuuruurrrrdrddddllDDDullllluurDldRRRRRlllluulluRdrddrrrruurruuuululllldlddDDDldRRRRldddrrruulUdrddlUdlluuulluuuuurrdrruLLLulDDDDDldRRRRluuRRllddrUluRldddddrrrrruLdlU
+
+Solver: Curry 0.3
+Solver time: 00:00:25
+Solver date: 2021-08-17  15:19:43
+
+
+Sasquatch I - 14
+
+ #######  
+##     # #
+#  *.$.#  
+#  *.#.###
+# #$@$$  #
+#   ## # #
+######   #
+     #####
+
+Solution
+uuurrddDuuullddLruulldRurDllldddrrUUddlluuururrrrdddLLrruuulllldldddrrUrrrrrddllUUllldlluuururrdRullldRlldddrruUddlluuR
+
+Solver: Curry 0.3
+Solver time: 00:00:05
+Solver date: 2021-08-17  15:19:48
+
+
+Sasquatch I - 15
+
+   ####    
+   #@ #    
+  ##  ##   
+  # .$#####
+  #$. #   #
+###..$# # #
+#  ..$  $ #
+# $ $ # ###
+##### # #  
+    #   #  
+    ###.#  
+      ###  
+
+Solution
+dddddRdddrruuuuurrddLruulldDDDDlluuuRRlllldRurrrdddlluUddrruuulLdlluururDDDuuululDDruuurDlddrddlUUUUddrdrrdddllUUddrruuulLdlUUluurrDDlddrddrruuulLdlUdlUrruuulldurrdddlllldRRRurDuuuuuulDrddddrruurrddLLLLLrrrdddllUUddrruuulL
+
+Solver: Curry 0.3
+Solver time: 00:00:11
+Solver date: 2021-08-17  15:19:59
+
+
+Sasquatch I - 16
+
+  ######       
+ ## #  ###     
+## #   # ##    
+# #   $.# #    
+##  $ $.# #    
+# #####. ##    
+#     $. @#    
+#     $. ####  
+### # #*# # ###
+  #### .$     #
+    #  .$     #
+    ## .##### #
+    # #.$ $  ##
+    # #.$   # #
+    ## #   # ##
+     ###  # ## 
+       ######  
+
+Solution
+luluuLrddddLLLLrrrrDDlddrUUUUruulDrdLLLrrdddRRRRlllldddRluuuuRRlluuuuuululldRdRluurDrDDDDDDldRuuuuuuulldRurDDDDDDuuuuuulllldRRRurDDrddlUUUdddlluRdrUUddddlddrUUUUUlllldRRRurDDDlddrUUUUruLLdllullldRRRRRurDDDuullluRRdrddlddrUUUdddddrdrruLuLDlUUUUdddrrdrruLLLdlUUdrrdddlUruLululuurDDuurrdLulDrrrrurrdLLLLLrrruLLL
+
+Solver: Curry 0.3
+Solver time: 01:31:59
+Solver date: 2021-08-17  16:51:59
+
+
+Sasquatch I - 17
+
+    ###########        
+   ## . . . . ###      
+   #  $$ $ $ $  #      
+   #   ######## # #####
+ #### ##  $     # #   #
+ #    #  $ $ #  ### # #
+##  # #   ####     $  #
+#...  ##### $  #### ###
+#... @     $     #    #
+#...############ $  $ #
+#####          #####  #
+                   ####
+
+Solution
+rrrrrRuRRdrUUruullllLdLrurrrrrddlddrrdRRllulluurrrrRllllldllldlllllluuuuuuurrrrrrrdRullldRulllllldddddddrrrrrrurrdLLLLLLLLLLLdlUrrrruuuuuuurrrdRullllddrURurrdLLLdlluRuRRdrruLdlLulDDDDDDldRRRRRRRurrdLLLLLLLLLullddrUUrruuuururrrurrdLLLLLulDDDDlllddrrrdrrrrrrrrruuruulDDDurrrrrddldllulLLLLLLLLLLLLulDrdLrurrrrrrrrrrruurrrrruurrddLLLLLLulDDurrrrrddldllulLLLLLLLLLLLLLrrrrrrrrrrrrrrdrrurrrddlUruLdLLrUUUlllllddrrdRRuruurruullDurrddlLLLLLulDDurrrrrddldllulLLLLLLLLLLLullddrUluRluurrruuruuRRRdrrurrdLLLLLLullddrUluRRllddddlllddrdrrrrrrrrrrruuruuuuLLLLLLLLullddrUrrrrrrrrrddllllldldlluRuRRRRRRdddllldlllllllluluurrruururrrrrrrrrdDDldddrrdrruruulllLulDDurrrrrddldllulLLLLLLLLLLLLdlUUrdrrrrrrrrrrrrrdrrRurrddlUruLdlUUUrruullDurrddlLLLLLulDDurrrrrddldllulLLLLLLLLLLLLulDrrrrrrrrrrrruuruuuulllllllllldddlllDurDurruururrruRRlldlluRRlldlluRRdrrrrrrrrddldddllldllllllllUdrruUUUUluRdrUldddllDurruururrrrrrrrrddlllllllddrUluRRRRRRdddllldlllllluuuuururrrrrrrrrdDDldRRRRRuurrddLruulldDDDldRuuulllluullldLLullddrUluRRRRRRdddllldlllllluuuuururrrrrrrrrdDDldddrrdrrruuulllLulDDurrrrrddldllulLLLLLLLLLLLLURdrrrrrrrrrruuruuuullllllllllddddDldRRRRRRRurrdLLLLLLLLLulDrruuullDurrdddrrrrrrrrrrrdrrrurrddlUruLdlUUUrruullDurrddlLLLLLulDDurrrrrddldllulLLLLLLLLLLL
+
+Solver: Curry 0.3
+Solver time: 00:39:51
+Solver date: 2021-08-17  17:31:51
+
+
+Sasquatch I - 18
+
+    ####
+#####  #
+#      #
+#$ $ $ #
+#.*.*.*#
+#*.*.*.#
+# $ $ $#
+#......#
+#.*.*.*#
+#$ $ $ #
+# $ $ $#
+#$ $ $ #
+#      #
+#@ #####
+####    
+
+
+Solver: Curry 0.3
+Solver time: 02:00:01
+Solver date: 2021-08-17  19:31:53
+
+
+Sasquatch I - 19
+
+#####                    
+#   #######              
+#  $      ##             
+## ######  ##            
+ # #    # # ########     
+ # # ##    $       ##    
+ # #.   #@###### $  ##   
+ # #.#  ###    ## $  ##  
+ # #.    #      ## $  ## 
+ # #.#   #  ##   ## $  ##
+## #.#  ##  ###   ## $  #
+#  #.#   #  #*##   ##   #
+#   .# # #  ##*##   #####
+######   #  ######       
+     #####               
+
+Solution
+urRRRRRRdRdRdRdRdRdrruLuLuLuLuLuLLLLLLLLLLruuulllllLulldRRlddddddddddrruuuuuuuurrrDDDDrdLulDDDruuuuuurrrrrrrrrrrdrdrdrdrddlUlUlUlUlUdrdrdrdrruLuLuLuLuLLLLLLLLLLruuullllLLulldRRlddddddddddrruuuuuuuurrrDDDDrdLdlUUUruLrurrrrrrrrrrrdrdrdrddlUlUlUlUdrdrdrruLuLuLuLLLLLLLLLLruuullllLLulldRRlddddddddddrruuuuuuuurrrDDDDrdLdlUUruuurrrrrrrrrrrdrdrddlUlUlUdrdrruLuLuLLLLLLLLLLruuullllLLulldRRlddddddddddrruuuuuuuurrrDDDDrdLulDruuuurrrrrrrrrrrdrddlUlUdrruLuLLLLLLLLLLruuullllLLulldRRlddddddddddrruuuuuuuurrrDDDuuulllddddrrlluuuurrrdrrrrrrrrrrrddlUruLLLLLLLLLLruuullllLLulldRRlddddddddddrruuuuuuuurrrDDurruuullllLLulDDDDDDDDDDldRRluuuuuuuuuurrrrrrrdddlldlLrruullldDDDDDuurrUdlluuuurrrddLLrruullldDDDDurrdrruLLLruulldDrrrdddlUUruLLruurDDrdLdlUUUruLLrruullldDrrrdddddrddllUUUUUUruLL
+
+Solver: Curry 0.3
+Solver time: 00:01:35
+Solver date: 2021-08-17  19:33:28
+
+
+Sasquatch I - 20
+
+     ####
+     #  #
+######$.#
+#   $ $.#
+# $@$...#
+# $$$..##
+#  $ ..# 
+######## 
+
+Solution
+ulldddrRRlURRurDuluLrddlldlluRRRRuulDrdLdlluRlluurDRRurDrruLruulDDrdLLLLddlluuRRRuRRdrUllldlluRRRRlldRRlllddlUluRRRRllddrUluR
+
+Solver: Curry 0.3
+Solver time: 00:00:10
+Solver date: 2021-08-17  19:33:38
+
+
+Sasquatch I - 21
+
+##### ######## 
+#   ### . $  # 
+#   $ *.. #$ ##
+## $# ..* $  @#
+ #  $ . ###   #
+ ######## #####
+
+Solution
+luulLLdlldlluLLrrdrrurrdRRdrUlllulldRRRRlllllluRRllllulldRRRRRllllddrUluRRRllddRRurrrrrrdrruLLLLLLrruurrrDulllddrrdrruLLLLLruurrDrdLLL
+
+Solver: Curry 0.3
+Solver time: 00:00:09
+Solver date: 2021-08-17  19:33:47
+
+
+Sasquatch I - 22
+
+   ##### ####  
+   #@ .###  ###
+####  $$ $    #
+#   # . . ##  #
+#  $ # . . ## #
+## .  $ $$  # #
+ # #  ###.  # #
+ # #### ##### #
+ #       #    #
+ ####### # ####
+       # .$ #  
+     ####   #  
+     ## #####  
+      ###      
+
+Solution
+rddrrddLLLuLrdrrrurrrddlUUlldRurrddlUruLdlluulluurDDrruLdlluurDldRRddlllululldRddddrrrrrrddrdrruLuurrruuuuuulllLLLdlUrdddllluLulldRdRRRRRRRurDrdLullllUdlllluurDrdrrruuurrDulldRlddrUdrruLLdllllullddddrrrrrrddRdrruLuurrruuuuuullllD
+
+Solver: Curry 0.3
+Solver time: 00:00:22
+Solver date: 2021-08-17  19:34:09
+
+
+Sasquatch I - 23
+
+     #######     
+######     ######
+#  . ..$#$.. .  #
+#  $ $  .  $ $  #
+###$####@####$###
+#  $ $  .  $ $  #
+#  . ..$#$.. .  #
+######     ######
+     #######     
+
+Solution
+drrdrruRldllulllldlluLrdrrurruullulldRRRRllulllldRRurrdrrddlldlluRRRRlllllUUluRRlddddlluRdrUUUruLdddrrrrruullLLulDDDldRRuluurrruurrrrddLLLLLLulDDDuuruRlldlluRRRdrrrrrrurrdLLLLLLLLrrrrddllllluUruLrdrrrrrruulDrdLLLLLLrrrrddllddrrrruuRlddlllluurruurrrrurrdLLLulldlddllddrrrrurrruUUruLLLrrddddllldlllluurruurRRRllllddllddrrrrurrruuUruLLrddddrruLdlllldlllluurruurrrrrdDrdLLLuRdrUUUlllllddRRRRlllluurrrrrdDrdLLullllllddrrrUdllluurrRRRRlllluurrrrrdDllllddllUluRllldRullldRRurrrddrruurrrruulllluurDldlllllulDDDrrrrddrruurrrruuluLrdrruLLrdddllllddlluulllluulluRdrrrrrrrRRRlllllllllddrrrrddrruurrrruUlllluullDurrddrrrrddllllddlluulllluurrrR
+
+Solver: Curry 0.3
+Solver time: 00:13:42
+Solver date: 2021-08-17  19:47:53
+
+
+Sasquatch I - 24
+
+        ######
+        #   ##
+  ####### $  #
+  # $ $ $ #$ #
+  #   #. $   #
+ ####.#.# $###
+ #   ..... #  
+ #  $ ..##$#  
+### ## ..  #  
+#  $.#$ # $#  
+#   $   #  #  
+##@  #  ####  
+ ##  ####     
+  ####        
+
+Solution
+ruRRRlllluRuuurrrrrruUrrruululldDDllddllllddddrrrUUruulldLulDDDDrrruruuuuuuRdrrrruululldDuurrdrddllLLulDDDrrrUdllluurruuurrdrddlLLLulDDurrrddllLLLdlldddrrrururrrUUUdllluurruuurrdrddlLLLulDDurrrddllLrrrddllllddllluuurruuuuRRRdrUlldddDurrrddllLdldllluuuuRdrURRuurrrddlLLLrrrruurruulDrdLLLLulDDurrrddllLrrruuruuullDDuurrdddlLLulDDurruuRurDDrdLLLLulDrrrddddlddrUUUUlUUrruullDDDurDDDDlddrUUUUUluuurrddLLLrrddLuuulllldlluRRRRRdrrruullDDDrdddllldldllluuurrRllldddrrruUdddrUUluRlddllddlUluRRRRdrUU
+
+Solver: Curry 0.3
+Solver time: 00:02:49
+Solver date: 2021-08-17  19:50:42
+
+
+Sasquatch I - 25
+
+         #####    
+     #####  ##### 
+     #  .#$   $ # 
+     # #. $$$ @ ##
+     #  .#$   $  #
+     ###.#  $ $  #
+       #.  ##$ ###
+ #######*###.$ #  
+ # $    ....####  
+## #$#$$....#     
+#  $ $   #..#     
+#     $  #..#     
+#  ##########     
+#####             
+
+Solution
+ldlldldllDDllllDDRRRlllLrrrrUdllluurrRdRRurrdLLLUUUUUddrrururrdRddLruululldldllddllllddrrrUdllluurrRdddrUluRRRurDDullllulDullddrRRdrUluRRRurDllllldllldlluRuuRRddrrruuRRRlluurrurRuruullDurrddldlldllddllddldLLrrurrdLLLrrrruuuuuuulluurrDDDDDDldRRurDDuulluurrurruruulldLLrrurrddldlldlluulluurrDDDDDDldRRRulluuuuurrruulDrdLLrrurrddldlldlluulluurrDDDDDDrdLLulDDrdLrruuuuurrurrururruLLLLulDrdLLrrurrddldlldlluulluurrDDDDDDldRRurDulluurrurUUdrruulLulDrdLLrrddldlluulluurrDDDDDDlddrUluRRluurrurruruLLLLrrddldlluulluurrDDDDDDrdLLruuurruUruLLrdddlluulluurrDDDDDDrdLulDruuurrurrururrdLLLLdlUruLLrdddlluulluurrDDDDDDldRRuluurrurrurrdLLLuullldddrrUUruLLrdddlluulluurrDDDDDDldRuuurrurrrrddlUUUruLLLLLrdddlluuUrrrrrrrdrdLLdlUUruLLLLLrdddlldddddlluRdrUUUUUUdddlddllluullddlddrUURRRRRdrUUUUUddlddllldLullddrUluRRRRRRdrUUUUdlddldLLLullddrUluRRRRRRdrUUUlddllluullDDlddrUluRRRRRRdrUlllluuRRRRlddlUdlluurRR
+
+Solver: Curry 0.3
+Solver time: 00:27:59
+Solver date: 2021-08-17  20:18:43
+
+
+Sasquatch I - 26
+
+           ####   
+ ###########  #   
+ #  $ $ $ $   ##  
+ #  # # # # #$##  
+ ##. . . . . .#   
+  #$# # # # #$####
+###. . . . . .   #
+###$# # # # # @  #
+  #   $ $ $ $  ###
+  #  ###########  
+  ####            
+
+
+Solver: Curry 0.3
+Solver time: 02:00:01
+Solver date: 2021-08-17  22:18:44
+
+
+Sasquatch I - 27
+
+      ########          
+ ######      ########## 
+## $     ###          ##
+# $ $ ## #  #########  #
+#  $  #              # #
+# $ $ # #  ######### # #
+#  $  #  # #. . . .  # #
+# $ $ # #    . . . .## #
+#  $  # # # . . . . #  #
+##$ $## #  #### # #   ##
+ #   #@ #       #  #### 
+ ######  #####  #  #    
+      ##     #  #  #    
+       #####  ##  ##    
+           ##    ##     
+            ######      
+
+
+Solver: Curry 0.3
+Solver time: 02:00:01
+Solver date: 2021-08-18  00:18:45
+
+
+Sasquatch I - 28
+
+       ######        
+       #    ###      
+   ##### $ $  #      
+####   #.#    ##     
+#  $ #$#.##$#####    
+# $$. .#.$      ##   
+#  $.#.#.#####  #### 
+##  ....... @#     # 
+ ####$ #.### #$###$##
+  ## $  .  #  $ $ $ #
+   # $ ###          #
+   #   # ############
+   #####             
+
+
+Solver: Curry 0.3
+Solver time: 02:00:01
+Solver date: 2021-08-18  02:18:46
+
+
+Sasquatch I - 29
+
+####                  
+#  #              ####
+#  ######## #######  #
+#         ###  ##  $ #
+##.###### ...     #. #
+ #.#      # .#   # $ #
+ #$$$$#$$$ #.#   ##. #
+ #.# $   $ #..      ##
+ #.#  $  $   # #   ## 
+ #  #   $$ #   #####  
+ #.  ##$  ######      
+ #.   #  $.  #        
+##. @ ###.#$ #        
+#     # #    #        
+#    ## ######        
+######                
+
+
+Solver: Curry 0.3
+Solver time: 02:00:01
+Solver date: 2021-08-18  04:18:47
+
+
+Sasquatch I - 30
+
+     #####                
+     #   #                
+     #   #        ######  
+   ###  ## #####  #    ###
+   #    #        ## #$$  #
+  ##$   ########## $  $  #
+###  ## ..........$  #$$@#
+#    # $$# ####### $     #
+#   $  #...#     ###  ####
+#   #   $ ### ##   ####   
+########    #             
+       #    #             
+       #    #             
+       ######             
+
+Solution
+dllllulLLLLLLLLLLLrrddllDDullulLLdlUrrrrdrruUddlluuRUUUUluurrdLulDDDrdLullDDDuuurrrdddldlLLrrrdrrruruurrrrrrrrrrurRlldllllllllllddlldlluuruulLulDDlddrrrdrrruruurrrrrrrrrrurrDulldlllllllllllLrrddlldlluurUUUUluurrdLulDDrdLrddrrrrrrrrrrruRRluurrrDDuulllddldllllllllddlddddlUUruuruullldlddrRurDDldRuuuruurrrrrrrrruuurrrddLLrruullldDrdLLLLLLLLLLLLrrddlldlluurUUUUdddrrrrrrrrrrrruuurrDrdLLruulldDrdLLLLLLLLLLLLrrddlldlluurUUdrDDullddrRurDldRuuruurrrrrrrrrrurrurrdLLLLruulldDrdLLLLLLLLLLLLdlldllluururrrDrdddlluuRurDDullddrRurruurrrrrrrrrrurrrrddlLLdlUUluuurrddLruulldDrdLLLLLLLLLLLLdlldllluururrrDrdddlluuRurDDDDuurruurrrrrrrrdRururrrrddllldlUUluuurrddLruulldDrdLLLLLLLLLLLLdlldllluururrrDrrrrrrrrrrrrrdrrrUruLLLLruulldDrdLLLLLLLLLLLLrrrrrrrrrrrrdrrUruLLLruulldDrdLLLLLLLLLLddlluuRRRRRRRRllllllllddddrUluRldlluuRlddrruUlldllluururrrDullldlddrrruRuRRRRRRRRlllllllldlddrruUluRRRRRRRllllllddrddddlUUUUUluRRRRRRlllllddrddddrruuLrddlluUUluuululuurDDDrdddlluuRlddrruUluRRRRRllllldldllldlluRRRRdrrruullDldRRluurrdDrddlUUUUluRRRRllldddrdrrdLLdlUUUUUluRRRlllullldDldRRdrrruullDldRRluurrdDrddlUUUUluRRlluuuluurDDDDDrdddlluuRlddrruUluRldldllllluRRurDldRRdrrruullDldRRluurrdDrddlUUUUluullluRdrruulDrdLLulDDDldRRdrrruullDldRRluurrdDrddlUU
+
+Solver: Curry 0.3
+Solver time: 00:14:13
+Solver date: 2021-08-18  04:33:02
+
+
+Sasquatch I - 31
+
+   #####             
+   #   #####         
+   # $$#   ######    
+ ###.  . $ #    #    
+ #  .##.####### #    
+ # $.  . #    # #    
+##.##$$$$#$$$ ###### 
+ #...    .    #    # 
+ #..##.####.### ##@# 
+ ## # $ $ $ # $ $  # 
+  # #       #     ###
+  # #.##.#.######  # 
+  #  $ # $.     $  # 
+  #    ###.## ###$## 
+  ###### #        #  
+         ##########  
+
+Solution
+dldddLLLLLrddllluuuuruuulllllllldddddrdrruLLdlUUUUdddrruurrrrrruuullllllllluuurrdLulDDDrrrrdDrdLulDruuulUdllluurruurrrddlLLLulDDurruuuurrDullddddrrruuLLruulldDDurrrddllLLulDrrrddrddrdrruLLdlUUdrrrdrruuullllLLLruurrrDulllddrddrrrdrruuullLuulllddrUluluurrrddLLrrrdLLulDrdLrddrrrRdrUllllluuuruuururrdLLLLLruulldDrrrddlddddrrrrdddddrrruulLrrddllluUUUruLLLLdlUUUluurDDDDldRRRulluuuruuuluLulDrdrrddlddddrrrrdddrrrrrrruulllluRdrrruruullldDldRRluuurrrddlDDrdLLLLLLLrrddllluUUUruLLLLdlUUUUluRdrUUdlddddrrdRurDDDrrrddlllUUUUruLLLLdlUUUUluRdrUlddddrrrrdddrrrrrrruuuLrruullldDldRRurDDrdLLLLLLLrrddllluUUUruLLLLdlUUUUluRddddrrrrdddrrrddrrrrUUUUluluurrrddLLrruullldDldRRurDDrdLLLLLLLrrddllluUUUruLLLdddRluurrdDuulllluuuurrdLulDDDldRRRRurDDullddrluulluuurrrrrrruulDrdLLLLLLulDDDldRRRRurDullLdlUUUluurDDDDldRRurDulluurrrrrruullDurrddlLLLLulDrrrruurDrdLLLLulldRR
+
+Solver: Curry 0.3
+Solver time: 01:27:18
+Solver date: 2021-08-18  06:00:21
+
+
+Sasquatch I - 32
+
+                   #####
+                   #   #
+           ######### $ #
+    ###### #   #   #   #
+    #    # # $     $ #@#
+  ### ## #### ### ## ###
+  #   $  $     #   #   #
+  #  $  $ # #$ # $$ $$ #
+ ######  $  #  #   #   #
+##    ## ###############
+#  .#   $ #    #        
+#..    #  ######        
+#...####  #             
+#....# ####             
+#....#                  
+######                  
+
+
+Solver: Curry 0.3
+Solver time: 02:00:01
+Solver date: 2021-08-18  08:00:22
+
+
+Sasquatch I - 33
+
+   #######               
+  ##     ##              
+  #  ###  #              
+  # ## $  ####           
+  # # .#   $.####        
+  # # * *###.$  #        
+  # # *#   ### #####     
+  # # @ * *  # #   #     
+  # #  ### #*#  *  #     
+  # ## #  * *.# # #######
+  # #  #     ....$  $   #
+  # # ## $# $####$      #
+###*   *     #    #######
+#   ########## ####      
+#              #         
+##  ############         
+ ####                    
+
+
+Solver: Curry 0.3
+Solver time: 02:00:01
+Solver date: 2021-08-18  10:00:23
+
+
+Sasquatch I - 34
+
+            #####         
+            # ..########  
+            # ......#  #  
+            #.. ##$$  $#  
+         #####.##   $  #  
+         #  ....# $  $$#  
+##### ## #  .. .#$  $  #  
+#   #    # ##.###  $$ $###
+#   ###  # ## #  $  #    #
+# @   #### #  # # ###$ # #
+#             #  $    $  #
+#   ####      ### ####$$##
+#  ##  ####     #       # 
+#  #      ##    ######  # 
+####       ##     # # $ # 
+            ##    # #   # 
+             ###### ##### 
+
+
+Solver: Curry 0.3
+Solver time: 02:00:01
+Solver date: 2021-08-18  12:00:25
+
+
+Sasquatch I - 35
+
+ #####                    
+ #   #                    
+## # #####                
+#    ##  #######          
+# #     $      ####       
+#   #### $  $$ #  #       
+#####  # $$$ $ #$ #       
+       # $  $ $ $ ######  
+     ###$   #$ $  $    #  
+     # $ $$      ### @ ## 
+     #  $ $$$$####...   # 
+     #  $     $ #. .#...# 
+     ### $$$$   ......  # 
+       #      ##..#.....# 
+       ###### ##.....#### 
+            #   .....#   #
+            ##########    
+
+
+Solver: Curry 0.3
+Solver time: 02:00:01
+Solver date: 2021-08-18  14:00:26
+
+
+Sasquatch I - 36
+
+               #####       
+   ####        #   ######  
+   #  #        # $    $ #  
+   #  ####     #  $##$  ###
+   #     #########  # $ $ #
+   #      ..........#   $ #
+ ###### ##....@###  # $$  #
+ #    # #####.## # ##   $ #
+ #            #  #$  $$ $ #
+#### #  ##### #  #  $  #  #
+#    # #      #  ###   ####
+#      #  #   #    #####   
+#   #     #####            
+#####     #                
+    #######                
+
+Solution
+urrrruUlluurrDDDrdLLLLLLLLLLLulDDDuurrrrrrdddlllllLLLulDDDldRRluuurrddDldRRRdrUUluRRRdrruuuuururrrruuurrrDrrddllUdddDlldlUUUruLLLLLLLLLLLulDDDuurrrrrrdddlllllLLLulldRRRRRRRRRllllllddddrrruurrdrruuUUdlllllluuurrrrrrrdLLLrrrurrrruulluRurDDDrdLLLLLLLLLLLulDDDuurrrrrrdddlllllLLLulDDDldRRluuurrddDldRRdrUruurrdrruuuuururrrrdddrrruuurruuuLLLLLulDldRurDDrdLLLLLLLLLLLulDDDuurrrrrrdddlllllLLLulDDDldRRluuurrddDldRRluuururrrrrruururrrrdddrrrurrdLLLLdlUUUruLLLLLLLLLLLulDDDuurrrrrrdddlllllLLLulDDDuurrdddlLLdlUrrrruururrrrrruururrrruuurrrrdDrdLulDDDrdLLLdlUUUruLLLLLLLLLLLrrrrrdddlllllluuUruLLdlUrrrdrrrrrrrrrruuurrrDDDDDrdLLLdlUUUruLLLLLLLLLLLulDDDuurrrrrrdddlllllLLLulldRRRRRRRRRllllllddddrdrruuurrdrruuUUdlllllluuurrrrrrrdLLrrurrrruuurrrrdddDDrdLLLLdlUUUruLLLLLLLLLLLulDDDuurrrrrrdddlllllLLLulDDDuurrdddlLLrrruururrrrrruururrrruuurrrrrdddDlddddllUdrruulLLdlUUUruLLLLLLLLLLLulDDDuurrrrrrdddlllllLLLLrrrrrrrrruururrrrdddrrrruurrruuLLLulDDDDrdLLLdlUUUruLLLLLLLLLLLrrrrrdddlllllluuUruLLrrdrrrrrrrrrrdddrrrruurrrddLLLLLLdlUUUruLLLLLLLLLLLulDDDuurrrrrrdddlllllLLLulDDDldRRluuurrddDuururrrrrruururrrrdddrrddrUruLLLdlUUUruLLLLLLLLLLLulDDDuurrrrrrdddlllllLdlddlluuurRRRRRRRlllllldddlddrrrruuurrdrruuUUdlllllluuurrrrrrrdLrurrrrdddrrrruurrDrdLLLLLLdlUUUruLLLLLLLLLLLulDDDuurrrrrrdddlllllLdlddlluuurRRRRRRRllllluuurrrrrrddDuururrrruuurrrrrddrDDDrdLLLLLLdlUUUruLLLLLLLLLLLulDDDuurrrrrrdddlllllLLLulDrrrrrrrrruururrrrdddrrrruurDrdLLLLLdlUUUruLLLLLLLLLLLulldRRRRRRRRRRRRllllllllllldddllullldRRRRRldddlddrrrruuurrdrruUUUUruLLLLLLulldRRRRRRRRRRRllllddddddllulldddlllUUUUruLLulldRRRdrUUUddlddddrdrruuurrdrruuuuuulllllulldRRRRRRRRRRllllllllldddlllDDldRRdrUUUddlluuurRdrUUUddlddddrdrruuurrdrruuuuuulllllulldRRRRRRRRRllllllllllluRRdrrrrrrrddddddlluRdrUUUUUruLLLLLLLLulldRRRRRRRRRRldddddllllddLLdlUUUUddlluuurRdrUUUddlddddrrruurrrruuuuulllllLLulldRRRRRRRRRlllllldddRRRRRllllllddddrrruurrrruUUUddlllllluuululluurDDldRRRRRRRlllldddlddddrrruulDrddlluRdrUUluRRRRdrUUUUdlllllluuuruLLdlluurDldRRRRRRllldddlllddlddlluuRRdrrruuulldDldRRluuurrddDldRRRdrUUluRRRRdrUUUlllllllllddllldRRRRdrUUUddlluuurRdrUUUUruLLdlluurDldRRRRR
+
+Solver: Curry 0.3
+Solver time: 00:33:00
+Solver date: 2021-08-18  14:33:27
+
+
+Sasquatch I - 37
+
+  #####       #########      
+  #   #       #       #      
+### #$### ##### # # # #####  
+# $. .  # #    . . . .    #  
+# # # #$### # # # # # # #$#  
+#  . . . .  $ $ $ $  . .  #  
+###$# # #$###########$# #$#  
+  #  . .  ##        #  .  #  
+  ###$# #$####### # #$# #$###
+    #  . .$ $ $ #   #  . .  #
+    #$# # # # # #####$# # # #
+    #  . . . . .  $  . . .  #
+    ### # # # # # # # # # # #
+      # $ $. . .$ $ $ $ $ $ #
+      ##### # # #############
+          #  @  #            
+          #######            
+
+
+Solver: Curry 0.3
+Solver time: 02:00:01
+Solver date: 2021-08-18  16:33:28
+
+
+Sasquatch I - 38
+
+                      ####
+  ####         ########  #
+###@ ##        #      #  #
+#     #        # ### $ $ #
+# ....##########   #  #..#
+# . #  ## $   $ $# #  #..#
+### #     $  $$$ # # $ $ #
+  # ...# $  $$   # #  #  #
+  #  ..# $   $ $ # # ##  #
+  ##...#  $ $$ $ #$# #####
+   #   ## $  $ $   # #    
+   ### ######  ### # ###  
+   # .   ## #### .   . #  
+  ##   . #     # #.#.# #  
+  #  .   # # # #   #   #  
+  # . ####     #########  
+  #  ##                   
+  ####                    
+
+
+Solver: Curry 0.3
+Solver time: 02:00:01
+Solver date: 2021-08-18  18:33:29
+
+
+Sasquatch I - 39
+
+   ####           #####
+   #  #######  ####   #
+   # @  $   ####   $  #
+   #  ###.#    #  $$  #
+ ###.## $ #$ #    #  ##
+ #  ..# $ ...# ###  ## 
+ # $ ...$##.##     ##  
+ ##.###$ $..   $$ ##   
+  #.  #. .### $ $ #    
+  #  $...## ## #  #    
+ ## ######   #   ##    
+##   ##      #####     
+# $$  #                
+#   $ #                
+### $ #                
+  #  ##                
+  ####                 
+
+
+Solver: Curry 0.3
+Solver time: 02:00:01
+Solver date: 2021-08-18  20:33:30
+
+
+Sasquatch I - 40
+
+     #######            
+#### #     #            
+#  ### $$$ #            
+#  ....$  #####         
+#  ..# $  #  @#         
+###$##$#### # ######    
+ #.*....$  $  ###  #####
+ # ..#####  ##   $ $   #
+ #....*.... #  $$  # $ #
+ ########## #$$ ## #   #
+    # $.###        $  ##
+    #       $###$# #  # 
+    #####   $    $ #### 
+        ####    ####    
+           ######       
+
+
+Solver: Curry 0.3
+Solver time: 02:00:01
+Solver date: 2021-08-18  22:33:31
+
+
+Sasquatch I - 41
+
+   #####                
+   #   #                
+ ###   ########         
+##  ***    # # #        
+ #  * *    ## # #####   
+##  ***   ## # ##   ##  
+ ###   #### # # #   #   
+   #   # # # ####$ $### 
+  ##   ## # ##  $...$ ##
+   ##### # ##    .@.  # 
+        # # #   $...$ ##
+         ########$ $### 
+                #   #   
+                #####   
+
+Solution
+dddlUUruLLLdlluRRdRRdrUUrrrdLLullddrdrUUruLuUddrruLdlddlluuuUruulDDDDuurrDDuuluurDDllddRlLdlluRRluR
+
+Solver: Curry 0.3
+Solver time: 00:00:19
+Solver date: 2021-08-18  22:33:50
+
+
+Sasquatch I - 42
+
+####               
+#  ######          
+#       ####       
+# $ $   #  #####   
+##### ###    $ #   
+ #  #   $  #   #   
+ #      ##$######  
+ # $###  # ...# #  
+ ## #@#$ ##.#.# #  
+ #    #   #...# #  
+ # $ ##$ $#...#####
+ ### ##   #...    #
+  #  #  $ $ $ # # #
+  # $### ###### # #
+  #             # #
+  #############   #
+              #####
+
+Solution
+dldddlddrrrrrrrrrrrruuulluuuulllUUddrrrddddrrdddllllllluUUdddrrrrrrruuulluuuullluulLLrrrddrdddddLLrrurrrrdddllllllluUrrruuuuuluulllddrddrDDuuluuluurrrddrrrddddrrdddllllllluuRuuuluululluuuulldRurDDDRdrdrddrdddlddrrrrrrruuulluuuullluullLLrddrddrdddlddllllluuruuuluUddrdddDldRuuuuulldRurDDDuuuluuluurDDDDuuurRUUUruLdddrrddrddrdddlluRdddrrrrrrruuulllldLLrrurrrrdddllllllluUrrrurrdLLuuuuuluullllldlldddrdddlddrRRRRRRRRRRllllllllllluuruuuluuurrurrrrrddrrrddddrrrrddddllUUUdddrruuuulLLLdlUUluRdrUUdlluuluullllldlldddrdddDldRRRRRRRRRRRlllllllllluuuuuluuurrurrrrrddrddrrddrrrrddddllUUUdddrruuuulLLLdlUUluuuluullllldlldddldRurDDDDldRRRRRRRRRRRlllllllllluuuuuluuurrurrrrrddrdddrrdrrrrddddllUUUdddrruuuulLLLdlUluRdrUUdlluuuluullldLLLrrrurrrddrdddrrdrrdddllllllllllluuuuuluuluurDDDDldRurDDDDldRRRRRRRRRRRlllllllllluuuuuluuurrrrurrrddrdddrrdrrrrddddllUUUdddrruuuulLLLLdlUUUUddrrdrrdddllllllllllluuuuuluuurrrrurrrddRluullllluullulldRRRRurrdLulDDDrdLLrrrurrrddrdddrrdrrdddllllllllllluuuuuluuluurDDDDldRurDDDDldRRRRRRRRRRRlllllllllluuuuuluuurrrrurrrddrdddrrdrrrrddddllUUUdddrruuuulLLLdlUluuuuluuluurDDllllldlldddrdddddrrrruurRRuuuuulUUllllluuuLLdlluurDldRRRurDDDrdLLrrrurrrddrdddddlllddlllluuuuuluuluurDDDDldRurDDDDldRRRRRRRRRRRlllllluurrrurrrrrrddddllUUUdddrruuuulLLLdLLuuuuuluuluurDDurrdrruLLLLulDrdLLLLdlUUUruLddddlldddrdddddrrrruurRRuuuuulUUluRRRdrruLLLLdddrdddddlllddrrrrrrruuulldLLuuuuuluullllluuuLLdlluurDldRRRurDDDrdLLrrrurrrddrdddddrrurrdddllllllllllluuuuuluuluurDDDDldRurDDDDldRRRRRRRRRRRlllllllllluuuuuluuurrrrurrrddrdddddrrurrrrddddllUUUdddrruuuulLLrdddllllllllllluuuuuluuurrrrurrrddrdddddrrUdlluuuRluuluulllddrddlUUUlllldddrdddddrrrrrrrrrrruuulldlluuuuuluullLLdlUUUruLLLdlluurDldRRRurDDDrdLLrrrurrrddrdddddrrurrdddllllllllllluuuuuluuluurDDDDldRurDDDlddrrrrruurRRlllluUUUUUddddddrrrruuuuuluullLLdlUUUruLLLrrdddrrddrddrdLuuuluurrrddrdddddlllluUUUUUddddddrrrruuuuuluullLLdlUUUruLLrdddrrdddddddrUUUdddddrrrrrrruuullLrrrdddllllllluurrrUUUUddddlllddllllluurDldRRRRRRRRRRRlllllluurrrurrrrrrddddllUUUdddrruuuulLLLLrrrdddllllllluurrrUUUdddllluurDldddrrrrrrruuulllldlLulDDuuuuluuulllldddrdddddrrrRRRRRRRlllllluurrrurrrrrrddddllUUUdddrruuuulLLLLrrrdddllllllluurrrUUdrUdrdLLLLulDDuuuuluuulllldddrdddddrrrRRRRRRRlllllluurrrrrurrrrddddllUUUdddrruuuulLLLLdlUdlluuulluuuulluulllluurDldRRRurDDDrdLLrrrdddrdddddlllluuuuuluuluurDDDDldRurDDDDldRRRRRRRRRRRlllllluurrrrrurrrrddddllUUUdddrruuuulLLLLdllluuulluuuulluuulLdlluurDldRRRurDDDrdLLrrrdddrdddddlllluuuuuluuluurDDDDldRurDDDDldRRRRRRRRRRRlllllluurrrrrurrrrddddllUUUdddrruuuulLLLdlUdllluuulluuuurrruulDrdLLLLdlUUUruLLLdlluurDldRRRurDDDrdLLrrrdddrdddddlllluuuuuluuluurDDDDldRurDDDDldRRRRRRRRRRRlllllluurrrrrurrrrddddllUUUdddrruuuulLLLdlllluuulluurDDDDDDuuuuuululllldddrdddddrrrRRRRRRRlllllluurrrrrurrrrddddllUUUdddrruuuulLL
+
+Solver: Curry 0.3
+Solver time: 00:41:24
+Solver date: 2021-08-18  23:15:15
+
+
+Sasquatch I - 43
+
+   ####                       
+  ##  #############           
+ ##    .......... #           
+##    #  ####$### ##          
+#      # #      #  ##         
+#     #  # $$$  # # #####     
+#####  # . .# ### . . . ##    
+    #   $. .#  # $$ $ $ @#    
+   ####### ### #   #######    
+   # $   $   # ## ###         
+   #    $  $ #  # ## # ####   
+   # $### ####  # # # ##  ####
+   #  $ $$$  # ## #  ##      #
+   ##        # ## #### $$$   #
+    ## ####### .....     #####
+    #  $         ######  #    
+    #   ######  ##    ####    
+    #####    ####             
+
+
+Solver: Curry 0.3
+Solver time: 02:00:01
+Solver date: 2021-08-19  01:15:16
+
+
+Sasquatch I - 44
+
+ #############          
+##       #   ###        
+#  $ $$$$$     #        
+### $   $  ### #        
+  # $ $ $### # #        
+  ##   $ ##  # ###      
+   ####   ####   #      
+     ###       # ###    
+   ####   ####     #    
+   #@ $   ###  #.# #####
+   # $ $ ## #  ....    #
+   # $$ ##  ####.....  #
+  ## $  #     #..#.##  #
+  # $ $ ##    #......  #
+  #  $ $ #    # . ..# ##
+  ##  $  #    ## ##.# # 
+   #    ##     #      # 
+   ######      ######## 
+
+
+Solver: Curry 0.3
+Solver time: 02:00:01
+Solver date: 2021-08-19  03:15:17
+
+
+Sasquatch I - 45
+
+  ####      ########   
+  #  ##### ##   #  #   
+  #    $ ### $  $  #   
+  #  $ # ##    $   ####
+  ###  #    # ###$##  #
+#####  ###  ####   $  #
+#   # $  $$## .. ##$  #
+#  $$   # $          ##
+##  # $##  #### # #### 
+### #  ##$ ###..#..#   
+#   ###..  #  .....### 
+#   #  *.### #  #..  # 
+##$$#  *.##@ #  #    # 
+ #     *. ####  ###  # 
+ ######   #  #       # 
+      #####  ##    ### 
+              #  ###   
+              ####     
+
+
+Solver: Curry 0.3
+Solver time: 02:00:01
+Solver date: 2021-08-19  05:15:18
+
+
+Sasquatch I - 46
+
+      #### ###################
+  #####  ###            .$   #
+###  $.       #####$####   # #
+#    $.  #### #     .   ### .#
+#  $ $.### ## # #### #  $.# $#
+###  $.## # # # #  #  # $ #  #
+  ###### # ## #$ $ ##   #. # #
+        ##### #.#.  #  ### # #
+ #####  #   # ### ###   #    #
+ ##*##  #     .#  #   #$$*  ##
+ #*### ### ## ## ## #  .#. ## 
+ ###*# #  .$ .# $.$.## ### #  
+ ##*## # #.####     # $.   ## 
+ #*### # $$   ### ###   ##  ##
+ ###*# # #   . $@$  #######. #
+ ##### # ### ####.#        $ #
+       #     #  ###########  #
+       #######            ####
+
+
+Solver: Curry 0.3
+Solver time: 02:00:01
+Solver date: 2021-08-19  07:15:19
+
+
+Sasquatch I - 47
+
+#########             
+#       #    ######   
+#   $   ######    ### 
+# #$#$ $ $  # $     # 
+# $   $@$  $ $ $ $$ # 
+# $ $# $ #     $$$  # 
+#  $ $ #######   #####
+##    ###....##### ..#
+ ###$$# $$$$ #...* ..#
+  #         ##   #.. #
+  #  #  #$###....##*##
+  #   ##..$. ....    #
+  ### .*   .#....#   #
+    ##################
+
+
+Solver: Curry 0.3
+Solver time: 02:00:01
+Solver date: 2021-08-19  09:15:20
+
+
+Sasquatch I - 48
+
+   #### ####           
+  ##  # #  #  #######  
+###   ###$ ## #     ###
+#  $      $ ###       #
+# $ $ ###$   #  #     #
+### ### #    #   #    #
+#  $ #  ## ###    # ###
+#    $   # #@        ##
+# $# # ### ###   #   # 
+#  $ # # $ $ #  #  # # 
+##   #    $  # #.    # 
+ ##  # #   ## #..  ### 
+  ## # #  ## #... ##   
+ ### # #### #....##    
+ #          $.*.##     
+ ############..##      
+            ####       
+
+
+Solver: Curry 0.3
+Solver time: 02:00:01
+Solver date: 2021-08-19  11:15:22
+
+
+Sasquatch I - 49
+
+ ######################### 
+ #  #  #  #  #  #  #  #  # 
+ # $#$ # $#$ # $#$ # $#$ # 
+ #  #  #  #  #  #  #  #  # 
+ ## # ### # ### # ### # ## 
+ #  #  #  #  #  #  #  #  # 
+ #     #     #     #     # 
+## ### # ### # ### # ### ##
+#   #  #  #  #  #  #  #   #
+#   #     #  @  #     #   #
+##  # ### # ### # ### #  ##
+ #  .  . . .   . . .  .  # 
+ ######################### 
+
+Solution
+ruuurrruuuruulDDDDrdLLLulDDDrdLLLulDDurrrrddlllLLLLruullllddrluurrrrddrruurrruuuruuuluurDDDDldddrdddrruuruuullLulDDDrdLLLulDruuuuluuruulDDDDrddddrrrddlllllluuuluurrRurDDDldRRRurDDullluuullllddrdddrrrrrRRRRluurrruuuruuuluurDDDDldRRRurDDDrdLulDDrdLruuuuuuluuruulDDDDrdLLLulDDDrdLLLulDDuruuulllldddlluuulllldddlluuullluuuluurDDDDldRRRurDDDldRRRurDDullluuuuluuruulDDDDrdLLLulDDDldRurDDldRuuuluurrrrdddrruuuruuuluurDDDDldRRRurDDDldRRRurDDullllD
+
+Solver: Curry 0.3
+Solver time: 00:00:20
+Solver date: 2021-08-19  11:15:42
+
+
+Sasquatch I - 50
+
+  # # # # # # # # # # # #  
+ # # # # # # # # # # # # # 
+#   .$    . $.  . $   .$  #
+ # $# #$# # # #$# # # #  # 
+#  .  .    $.  .  .$ .  . #
+ # #$# # # # #$#$ $# #$# # 
+# .     .$ .$    . $.  .  #
+ # $# # # # #@# # # # #$ # 
+#  .  .$ .    $. $.     . #
+ # #$# #$ $#$# # # # #$# # 
+# .  . $.  .  .$    .  .  #
+ #  # # # #$# # # #$# #$ # 
+#  $.   $ .  .$ .    $.   #
+ # # # # # # # # # # # # # 
+  # # # # # # # # # # # #  
+
+
+Solver: Curry 0.3
+Solver time: 02:00:01
+Solver date: 2021-08-19  13:15:43
+

@@ -1,0 +1,59 @@
+--------------------------------------------------------------------------------------
+Sokoban Solver Statistics - Curry
+Date: 2021-08-17  10:45:08
+--------------------------------------------------------------------------------------
+   Task       Time Plugin               Result                     Moves  Pushes Level
+--------------------------------------------------------------------------------------
+      1   00:00:02 Curry 0.3            OK                           184      34 Sasquatch I - 1
+      2   00:00:03 Curry 0.3            OK                            97      24 Sasquatch I - 2
+      3   00:00:34 Curry 0.3            OK                           498     197 Sasquatch I - 3
+      4   00:00:11 Curry 0.3            OK                           311     105 Sasquatch I - 4
+      5   02:00:01 Curry 0.3            Time limit exceeded                      Sasquatch I - 5
+      6   00:29:39 Curry 0.3            OK                           230      61 Sasquatch I - 6
+      7   00:00:15 Curry 0.3            OK                           305      82 Sasquatch I - 7
+      8   00:00:09 Curry 0.3            OK                           280      27 Sasquatch I - 8
+      9   00:00:04 Curry 0.3            OK                           176      42 Sasquatch I - 9
+     10   00:03:04 Curry 0.3            OK                           641     175 Sasquatch I - 10
+     11   00:00:06 Curry 0.3            OK                           175      30 Sasquatch I - 11
+     12   02:00:01 Curry 0.3            Time limit exceeded                      Sasquatch I - 12
+     13   00:00:25 Curry 0.3            OK                           329      58 Sasquatch I - 13
+     14   00:00:05 Curry 0.3            OK                           119      15 Sasquatch I - 14
+     15   00:00:11 Curry 0.3            OK                           222      44 Sasquatch I - 15
+     16   01:31:59 Curry 0.3            OK                           308     106 Sasquatch I - 16
+     17   00:39:51 Curry 0.3            OK                          1231     316 Sasquatch I - 17
+     18   02:00:01 Curry 0.3            Time limit exceeded                      Sasquatch I - 18
+     19   00:01:35 Curry 0.3            OK                           768     211 Sasquatch I - 19
+     20   00:00:10 Curry 0.3            OK                           125      44 Sasquatch I - 20
+     21   00:00:09 Curry 0.3            OK                           134      40 Sasquatch I - 21
+     22   00:00:22 Curry 0.3            OK                           229      42 Sasquatch I - 22
+     23   00:13:42 Curry 0.3            OK                           630     114 Sasquatch I - 23
+     24   00:02:49 Curry 0.3            OK                           489     116 Sasquatch I - 24
+     25   00:27:59 Curry 0.3            OK                           884     248 Sasquatch I - 25
+     26   02:00:01 Curry 0.3            Time limit exceeded                      Sasquatch I - 26
+     27   02:00:01 Curry 0.3            Time limit exceeded                      Sasquatch I - 27
+     28   02:00:01 Curry 0.3            Time limit exceeded                      Sasquatch I - 28
+     29   02:00:01 Curry 0.3            Time limit exceeded                      Sasquatch I - 29
+     30   00:14:13 Curry 0.3            OK                          1219     324 Sasquatch I - 30
+     31   01:27:18 Curry 0.3            OK                           845     221 Sasquatch I - 31
+     32   02:00:01 Curry 0.3            Time limit exceeded                      Sasquatch I - 32
+     33   02:00:01 Curry 0.3            Time limit exceeded                      Sasquatch I - 33
+     34   02:00:01 Curry 0.3            Time limit exceeded                      Sasquatch I - 34
+     35   02:00:01 Curry 0.3            Time limit exceeded                      Sasquatch I - 35
+     36   00:33:00 Curry 0.3            OK                          2086     666 Sasquatch I - 36
+     37   02:00:01 Curry 0.3            Time limit exceeded                      Sasquatch I - 37
+     38   02:00:01 Curry 0.3            Time limit exceeded                      Sasquatch I - 38
+     39   02:00:01 Curry 0.3            Time limit exceeded                      Sasquatch I - 39
+     40   02:00:01 Curry 0.3            Time limit exceeded                      Sasquatch I - 40
+     41   00:00:19 Curry 0.3            OK                            99      32 Sasquatch I - 41
+     42   00:41:24 Curry 0.3            OK                          2750     556 Sasquatch I - 42
+     43   02:00:01 Curry 0.3            Time limit exceeded                      Sasquatch I - 43
+     44   02:00:01 Curry 0.3            Time limit exceeded                      Sasquatch I - 44
+     45   02:00:01 Curry 0.3            Time limit exceeded                      Sasquatch I - 45
+     46   02:00:01 Curry 0.3            Time limit exceeded                      Sasquatch I - 46
+     47   02:00:01 Curry 0.3            Time limit exceeded                      Sasquatch I - 47
+     48   02:00:01 Curry 0.3            Time limit exceeded                      Sasquatch I - 48
+     49   00:00:20 Curry 0.3            OK                           439     122 Sasquatch I - 49
+     50   02:00:01 Curry 0.3            Time limit exceeded                      Sasquatch I - 50
+--------------------------------------------------------------------------------------
+:    50   50:30:20 Total                OK: 28 Failed: 22          15803    4052     :
+--------------------------------------------------------------------------------------

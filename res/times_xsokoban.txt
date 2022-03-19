@@ -1,0 +1,99 @@
+--------------------------------------------------------------------------------------
+Sokoban Solver Statistics - Curry
+Date: 2021-08-11  07:39:51
+--------------------------------------------------------------------------------------
+   Task       Time Plugin               Result                     Moves  Pushes Level
+--------------------------------------------------------------------------------------
+      1   00:00:05 Curry 0.3            OK                           253      97 Level 1
+      2   00:00:13 Curry 0.3            OK                           574     145 Level 2
+      3   00:00:14 Curry 0.3            OK                           370     140 Level 3
+      4   00:03:03 Curry 0.3            OK                          1113     413 Level 4
+      5   00:00:22 Curry 0.3            OK                           542     165 Level 5
+      6   00:00:12 Curry 0.3            OK                           340     126 Level 6
+      7   00:00:18 Curry 0.3            OK                           393     130 Level 7
+      8   00:01:56 Curry 0.3            OK                           745     268 Level 8
+      9   00:00:39 Curry 0.3            OK                           598     237 Level 9
+     10   03:40:20 Curry 0.3            OK                          1686     576 Level 10
+     11   00:03:38 Curry 0.3            OK                          1031     291 Level 11
+     12   00:05:26 Curry 0.3            OK                           841     230 Level 12
+     13   00:55:37 Curry 0.3            OK                           952     296 Level 13
+     14   02:59:58 Curry 0.3            OK                          1126     251 Level 14
+     15   01:03:18 Curry 0.3            OK                           640     182 Level 15
+     16   03:11:35 Curry 0.3            OK                           808     246 Level 16
+     17   00:00:06 Curry 0.3            OK                           531     221 Level 17
+     18   00:04:21 Curry 0.3            OK                           784     158 Level 18
+     19   00:02:31 Curry 0.3            OK                          1127     364 Level 19
+     20   00:38:11 Curry 0.3            OK                          2101     510 Level 20
+     21   00:01:19 Curry 0.3            OK                           696     211 Level 21
+     22   05:30:53 Curry 0.3            OK                          1731     494 Level 22
+     23   00:17:54 Curry 0.3            OK                          1255     492 Level 23
+     24   00:16:51 Curry 0.3            OK                          1790     620 Level 24
+     25   00:07:14 Curry 0.3            OK                          1571     434 Level 25
+     26   00:01:40 Curry 0.3            OK                           589     205 Level 26
+     27   00:08:10 Curry 0.3            OK                          1782     419 Level 27
+     28   00:11:44 Curry 0.3            OK                           983     326 Level 28
+     29   03:51:49 Curry 0.3            OK                           893     236 Level 29
+     30   00:09:54 Curry 0.3            OK                          1401     529 Level 30
+     31   05:11:30 Curry 0.3            OK                           989     310 Level 31
+     32   00:11:53 Curry 0.3            OK                           551     163 Level 32
+     33   00:01:27 Curry 0.3            OK                           938     260 Level 33
+     34   00:01:12 Curry 0.3            OK                           894     238 Level 34
+     35   00:30:43 Curry 0.3            OK                          1330     416 Level 35
+     36   07:09:12 Curry 0.3            OK                          2021     577 Level 36
+     37   00:13:40 Curry 0.3            OK                          1420     462 Level 37
+     38   00:00:17 Curry 0.3            OK                           418     133 Level 38
+     39   07:27:08 Curry 0.3            OK                          1870     720 Level 39
+     40   00:31:10 Curry 0.3            OK                          1610     356 Level 40
+     41   00:07:44 Curry 0.3            OK                           723     251 Level 41
+     42   13:23:09 Curry 0.3            OK                          1077     334 Level 42
+     43   00:00:20 Curry 0.3            OK                           782     164 Level 43
+     44   00:00:57 Curry 0.3            OK                           640     197 Level 44
+     45   01:35:39 Curry 0.3            OK                           935     324 Level 45
+     46   02:21:04 Curry 0.3            OK                          1118     303 Level 46
+     47   00:12:22 Curry 0.3            OK                           670     221 Level 47
+     48   08:22:23 Curry 0.3            OK                           638     228 Level 48
+     49   00:04:10 Curry 0.3            OK                           659     158 Level 49
+     50   14:49:24 Curry 0.3            OK                          1234     428 Level 50
+     51   00:00:33 Curry 0.3            OK                           434     138 Level 51
+     52   01:00:48 Curry 0.3            OK                          1877     481 Level 52
+     53   00:01:28 Curry 0.3            OK                           930     240 Level 53
+     54   00:02:05 Curry 0.3            OK                          1239     339 Level 54
+     55   00:02:38 Curry 0.3            OK                           578     154 Level 55
+     56   00:01:28 Curry 0.3            OK                           686     231 Level 56
+     57   00:02:45 Curry 0.3            OK                           833     307 Level 57
+     58   00:02:15 Curry 0.3            OK                           775     255 Level 58
+     59   00:01:58 Curry 0.3            OK                           951     300 Level 59
+     60   00:00:57 Curry 0.3            OK                           698     192 Level 60
+     61   00:04:46 Curry 0.3            OK                           986     317 Level 61
+     62   00:01:54 Curry 0.3            OK                           826     267 Level 62
+     63   00:08:33 Curry 0.3            OK                          1550     473 Level 63
+     64   00:02:09 Curry 0.3            OK                          1303     435 Level 64
+     65   00:01:55 Curry 0.3            OK                           865     267 Level 65
+     66   01:18:22 Curry 0.3            OK                          1411     451 Level 66
+     67   00:15:34 Curry 0.3            OK                          1630     527 Level 67
+     68   00:05:00 Curry 0.3            OK                          1617     423 Level 68
+     69   00:56:26 Curry 0.3            OK                          1657     525 Level 69
+     70   00:05:09 Curry 0.3            OK                          1155     379 Level 70
+     71   00:15:51 Curry 0.3            OK                          1229     344 Level 71
+     72   00:32:06 Curry 0.3            OK                          1294     454 Level 72
+     73   00:02:34 Curry 0.3            OK                          1595     461 Level 73
+     74   00:14:59 Curry 0.3            OK                           794     246 Level 74
+     75   00:03:23 Curry 0.3            OK                          1377     419 Level 75
+     76   00:02:56 Curry 0.3            OK                          1081     384 Level 76
+     77   00:19:57 Curry 0.3            OK                          2289     414 Level 77
+     78   00:00:12 Curry 0.3            OK                           429     142 Level 78
+     79   00:00:38 Curry 0.3            OK                           500     192 Level 79
+     80   00:00:53 Curry 0.3            OK                           663     247 Level 80
+     81   00:00:37 Curry 0.3            OK                           707     219 Level 81
+     82   00:00:33 Curry 0.3            OK                           475     179 Level 82
+     83   00:00:21 Curry 0.3            OK                           632     250 Level 83
+     84   00:00:39 Curry 0.3            OK                           645     225 Level 84
+     85   00:19:21 Curry 0.3            OK                          2065     375 Level 85
+     86   00:00:32 Curry 0.3            OK                           566     150 Level 86
+     87   00:06:37 Curry 0.3            OK                           872     257 Level 87
+     88   18:46:58 Curry 0.3            OK                          1404     468 Level 88
+     89   03:09:14 Curry 0.3            OK                          1587     437 Level 89
+     90   17:38:40 Curry 0.3            OK                          2182     568 Level 90
+--------------------------------------------------------------------------------------
+:    90  131:38:39 Total                OK: 90 Failed: 0           94150   28387     :
+--------------------------------------------------------------------------------------
