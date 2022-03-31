@@ -4,12 +4,14 @@
 
 void BoardParam::set_matrix(const ElementsMatrix &m)
 {
+    globals::setOriginBoard(m);
     m_goals.reset(new PosVector);
     PosVector* _m_goals = const_cast<PosVector*>(m_goals.get());
 
     m_empty_room.reset(new ElementsMatrix(m));
     ElementsMatrix* _m_empty_room = const_cast<ElementsMatrix*>(m_empty_room.get());
     box_index.clear();
+    boxMat = m;
 
     for (auto it=m.range(); it; ++it) {
         Pos p = it.pos();
@@ -102,6 +104,8 @@ void BoardParam::box_move(Pos box, Pos to)
     auto it = std::find(begin(box_index), end(box_index), box);
     assert(it != end(box_index));
     *it = to;
+    boxMat.set(box, Elements::floor);
+    boxMat.set(to , Elements::box);
 }
 
 std::list<BoardParam> BoardParam::next_move() const
@@ -149,14 +153,14 @@ bool BoardParam::can_box_move(Pos box, Direction d) const
 
 bool BoardParam::precise_equal(const BoardParam &param) const
 {
-    assert(goals() == param.goals());
+    //assert(goals() == param.goals());
     assert(empty_room() == param.empty_room());
     return man() == param.man() && is_same_boxes(param);
 }
 
 bool BoardParam::like_equal(const BoardParam &param) const
 {
-    assert(goals() == param.goals());
+    //assert(goals() == param.goals());
     assert(empty_room() == param.empty_room());
     return is_same_boxes(param) && RoomSlice(*this).can_man_to(param.man());
 }
@@ -164,19 +168,34 @@ bool BoardParam::like_equal(const BoardParam &param) const
 bool BoardParam::is_done() const
 {
     auto this_is_box = [this](const Pos &p) { return is_box(p); };
+#if 0
     return std::all_of(goals()->begin(), goals()->end(), this_is_box);
+#else
+    const auto &goals = globals::getOriginGoals();
+    return std::all_of(goals.begin(), goals.end(), this_is_box);
+#endif
 }
 
 
 bool BoardParam::is_goal(Pos p) const
 {
+#if 0
     return std::find(goals()->begin(), goals()->end(), p) != goals()->end();
+#else
+    return globals::getOriginBoard().get(p) == Elements::goal;
+#endif
 }
 
 bool BoardParam::is_box(Pos p) const
 {
+#if 0
     return std::find(box_index.begin(), box_index.end(), p) != box_index.end();
+#else
+    return boxMat.get(p) == Elements::box;
+#endif
 }
+
+
 
 bool BoardParam::is_same_boxes(const BoardParam &param) const
 {
@@ -199,6 +218,29 @@ bool BoardParam::is_absolutely_dead_box(Pos box) const
         return true;
 
     }
+    // 如果推动一个box，给box所在位置造成了 2x2那么也是死了
+    /*
+     *    $$                ???
+     *  @$ #  类似的         ?$?   12
+     *                      ???   34
+    */
+#if 1
+    Pos start(box.row()-1, box.col()-1);
+    for (Pos::value_type r=0; r<=1; ++r)
+        for (Pos::value_type c=0; c<=1; ++c)
+        {
+            Pos pos1(start.row()+r, start.col()+c);
+            Pos pos2(pos1.row(), pos1.col()+1);
+            Pos pos3(pos1.row()+1, pos1.col());
+            Pos pos4(pos1.row()+1, pos1.col()+1);
+            if (is_occupied(pos1) && is_occupied(pos2) && is_occupied(pos3) && is_occupied(pos4))
+            {
+                std::cout << "find deadlock\n";
+                return true;
+            }
+        }
+#endif
+
     return false;
 }
 
@@ -245,7 +287,7 @@ bool BoardParam::can_solve(const MoveList &mlst) const
 
 bool operator ==(const BoardParam &p1, const BoardParam &p2)
 {
-    assert(p1.goals() == p2.goals());
+    //assert(p1.goals() == p2.goals());
     assert(p1.empty_room() == p2.empty_room());
 
     // 这里需要特殊处理完成的状态，因为完成时人在哪里也不知道，所以特殊处理

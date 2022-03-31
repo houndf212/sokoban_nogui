@@ -4,6 +4,7 @@
 #include <vector>
 #include <list>
 #include <set>
+#include <iostream>
 
 #include "basic_pos.h"
 #include "basic_resize_matrix.h"

@@ -10,6 +10,7 @@ SOURCES += \
         boardparam.cpp \
         check_matrix_iterator.cpp \
         debug_print.cpp \
+        globals.cpp \
         hungarianalg.cpp \
         main.cpp \
         matrix.cpp \
@@ -42,6 +43,7 @@ HEADERS += \
     dijkstra.h \
     elements.h \
     global.h \
+    globals.h \
     hungarianalg.h \
     iteratorrange.h \
     maskmatrix.h \

@@ -3,7 +3,7 @@
 #include <memory>
 #include "types.h"
 #include "movelist.h"
-
+#include "globals.h"
 
 //这个类描述一个推箱子所有需要的元素，在boardapi操作这个类
 
@@ -54,6 +54,10 @@ public:
     }
     bool is_goal(Pos p) const;
     bool is_box(Pos p) const;
+    inline bool is_occupied(Pos p) const
+    {
+        return is_wall(p) || is_box(p);
+    }
     bool is_same_boxes(const BoardParam &param) const;
     bool is_absolutely_dead_box(Pos box) const;
     bool is_absolutely_dead() const;
@@ -76,6 +80,7 @@ private:
     Pos man_pos;
     // box 的索引
     PosVector box_index;
+    ElementsMatrix boxMat;
     //目标位置, set之后就不会变了
     std::shared_ptr<const PosVector> m_goals;
     //只包含 wall floor的"空"房子,和goals一样，set之后就不会变了
