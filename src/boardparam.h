@@ -22,11 +22,7 @@ public:
     size_t goals_size() const
     {
         assert(m_goals!=nullptr);
-        return m_goals->size();
-    }
-    const PosVector *goals() const
-    {
-        return m_goals.get();
+        return globals::getOriginGoals().size();
     }
     const PosVector &boxes() const { return box_index; }
 
@@ -82,7 +78,7 @@ private:
     PosVector box_index;
     ElementsMatrix boxMat;
     //目标位置, set之后就不会变了
-    std::shared_ptr<const PosVector> m_goals;
+    //std::shared_ptr<const PosVector> m_goals;
     //只包含 wall floor的"空"房子,和goals一样，set之后就不会变了
     std::shared_ptr<const ElementsMatrix> m_empty_room;
 };

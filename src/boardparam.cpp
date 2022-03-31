@@ -5,8 +5,6 @@
 void BoardParam::set_matrix(const ElementsMatrix &m)
 {
     globals::setOriginBoard(m);
-    m_goals.reset(new PosVector);
-    PosVector* _m_goals = const_cast<PosVector*>(m_goals.get());
 
     m_empty_room.reset(new ElementsMatrix(m));
     ElementsMatrix* _m_empty_room = const_cast<ElementsMatrix*>(m_empty_room.get());
@@ -26,24 +24,20 @@ void BoardParam::set_matrix(const ElementsMatrix &m)
             _m_empty_room->set(p, Elements::floor);
             break;
         case Elements::goal:
-            _m_goals->push_back(p);
             _m_empty_room->set(p, Elements::floor);
             break;
         case Elements::man_goal:
             man_pos = p;
-            _m_goals->push_back(p);
             _m_empty_room->set(p, Elements::floor);
             break;
         case Elements::box_goal:
             box_index.push_back(p);
-            _m_goals->push_back(p);
             _m_empty_room->set(p, Elements::floor);
             break;
         default:
             break;
         }
     }
-    _m_goals->shrink_to_fit();
     box_index.shrink_to_fit();
 }
 
@@ -260,7 +254,7 @@ ElementsMatrix BoardParam::to_matrix() const
         m.set(p, Elements::box);
     }
 
-    for (auto p : *goals()) {
+    for (auto p : globals::getOriginGoals()) {
         auto e = m.get(p);
         m.set(p, add_goal(e));
     }
@@ -270,7 +264,7 @@ ElementsMatrix BoardParam::to_matrix() const
 BoardParam BoardParam::to_goal() const
 {
     BoardParam pa = *this;
-    pa.box_index = *pa.goals();
+    pa.box_index = globals::getOriginGoals();
     return pa;
 }
 
