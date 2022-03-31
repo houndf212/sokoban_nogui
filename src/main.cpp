@@ -3,9 +3,12 @@
 #include "boardgraph.h"
 #include <iostream>
 #include <string.h>
+#include <chrono>
 #include "debug_print.h"
+
 using namespace std;
 using namespace XSB;
+
 bool check()
 {
     extern bool check_matrix_iterator();
@@ -91,14 +94,20 @@ void tryOne(const char *pFile)
     BoardParam param;
     param.set_matrix(em);
 
+    auto t1 = chrono::system_clock::now();
+
     auto ml = BoardGraph::solve(param);
 
+    auto t2 = chrono::system_clock::now();
+
+    auto ms = chrono::duration_cast<chrono::milliseconds>(t2-t1).count();
     if (param.can_solve(ml))
     {
         cout << "Level X\n\n";
         print(em);
         cout << "Solution\n";
         print(ml);
+        cout << "solver time: " << ms << "ms" <<endl;
     }
 
 }

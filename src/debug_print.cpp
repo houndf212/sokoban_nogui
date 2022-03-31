@@ -72,5 +72,6 @@ void print(const MoveList &mlst)
     for (auto d : mlst) {
         cout<<XSB::d_to_char(d)/*<<","*/;
     }
+    cout <<endl;
     //cout<<"]"<<endl;
 }
