@@ -1,6 +1,5 @@
 ﻿#include "boardparam.h"
 #include "roomslice.h"
-#include <algorithm>
 #include "xsb.h"
 #include "debug_print.h"
 
@@ -26,6 +25,7 @@ void BoardParam::set_matrix(const ElementsMatrix &m)
         }
     }
     box_index.shrink_to_fit();
+    sort_boxes_index();
 }
 
 bool BoardParam::man_move(Direction &d)
@@ -102,7 +102,11 @@ std::list<BoardParam> BoardParam::next_move() const
             pa.man_pos = man_to;
             pa.box_move(box, to);
             if (pa.is_goal(to) || !pa.is_absolutely_dead_box(to))
+            {
+                // make sure boxes index is sorted
+                pa.sort_boxes_index();
                 nexts.push_back(pa);
+            }
         }
     };
 
@@ -278,19 +282,28 @@ bool operator ==(const BoardParam &p1, const BoardParam &p2)
     return p1.like_equal(p2);
 }
 
+inline size_t
+gnu_hash_str(const void *p, size_t n)
+{
+    return std::_Hash_impl::hash(p, n);
+}
 //推箱子唯一不同的是 man的位置 和 boxex的位置，
 //而man的位置不是关键之处
 //所以可以大幅度提高hash的计算速度
 #include <type_traits>
 size_t BoardHash::operator()(const BoardParam &param) const
 {
-    PosVector boxes = param.boxes();
-    std::sort(boxes.begin(), boxes.end());
+    const PosVector &boxes = param.boxes();
+    assert(std::is_sorted(boxes.begin(), boxes.end()));
     static_assert(std::is_trivial<PosVector::value_type>(), "cannot use normal hash!");
     int mem_size = boxes.size()*sizeof(PosVector::value_type);
     assert(!boxes.empty());
     assert(reinterpret_cast<const char*>(&boxes[boxes.size()])
             == reinterpret_cast<const char*>(&boxes[0])+mem_size);
+#if 0
     std::string str(reinterpret_cast<const char*>(&boxes[0]), mem_size);
     return std::hash<std::string>()(str);
+#else
+    return gnu_hash_str(&boxes[0], mem_size);
+#endif
 }

@@ -1,6 +1,7 @@
 ﻿#ifndef BOARDPARAM_H
 #define BOARDPARAM_H
 #include <memory>
+#include <algorithm>
 #include "types.h"
 #include "movelist.h"
 #include "globals.h"
@@ -50,6 +51,11 @@ public:
     bool is_absolutely_dead_box(Pos box) const;
     bool is_absolutely_dead() const;
     bool can_solve(const MoveList &mlst) const;
+
+    void sort_boxes_index()
+    {
+        std::sort(box_index.begin(), box_index.end());
+    }
 
     //用于自动推箱子
     std::list<BoardParam> next_move() const;
