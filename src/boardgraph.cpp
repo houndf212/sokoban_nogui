@@ -42,7 +42,7 @@ BoardGraph::distance_t BoardGraph::heuristic(const BoardGraph::vertex_t &v1, con
 
     auto index = m.szero();
     for (auto box : v1.boxes()) {
-        for (auto goal : *v1.goals()) {
+        for (auto goal : globals::getOriginGoals()) {
             distance_t d = Manhattan_Distance(box, goal);
             Pos p(index/size, index%size);
             m.set(p, d);

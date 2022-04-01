@@ -21,19 +21,12 @@ public:
 
     size_t goals_size() const
     {
-        assert(m_goals!=nullptr);
         return globals::getOriginGoals().size();
     }
     const PosVector &boxes() const { return box_index; }
 
     //只包含 wall floor box, 即是说不包含goals和人
     ElementsMatrix cache_room() const;
-
-    const ElementsMatrix *empty_room() const
-    {
-        assert(m_empty_room!=nullptr);
-        return m_empty_room.get();
-    }
 
     //空的即是说，不是墙，也不是box
     bool is_empty(Pos p) const
@@ -45,8 +38,7 @@ public:
     bool is_done() const;
     bool is_wall(Pos p) const
     {
-        assert(empty_room()!=nullptr);
-        return empty_room()->get(p) == Elements::wall;
+        return globals::empty_room()->get(p) == Elements::wall;
     }
     bool is_goal(Pos p) const;
     bool is_box(Pos p) const;
@@ -80,7 +72,7 @@ private:
     //目标位置, set之后就不会变了
     //std::shared_ptr<const PosVector> m_goals;
     //只包含 wall floor的"空"房子,和goals一样，set之后就不会变了
-    std::shared_ptr<const ElementsMatrix> m_empty_room;
+    //std::shared_ptr<const ElementsMatrix> m_empty_room;
 };
 
 bool operator == (const BoardParam &p1, const BoardParam &p2);

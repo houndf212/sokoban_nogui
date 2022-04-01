@@ -1,13 +1,12 @@
 ﻿#include "boardparam.h"
 #include "roomslice.h"
 #include <algorithm>
+#include "xsb.h"
+#include "debug_print.h"
 
 void BoardParam::set_matrix(const ElementsMatrix &m)
 {
     globals::setOriginBoard(m);
-
-    m_empty_room.reset(new ElementsMatrix(m));
-    ElementsMatrix* _m_empty_room = const_cast<ElementsMatrix*>(m_empty_room.get());
     box_index.clear();
     boxMat = m;
 
@@ -15,24 +14,12 @@ void BoardParam::set_matrix(const ElementsMatrix &m)
         Pos p = it.pos();
         auto e = *it;
         switch (e) {
-        case Elements::man:
-            man_pos = p;
-            _m_empty_room->set(p, Elements::floor);
-            break;
+        case Elements::box_goal:
         case Elements::box:
             box_index.push_back(p);
-            _m_empty_room->set(p, Elements::floor);
             break;
-        case Elements::goal:
-            _m_empty_room->set(p, Elements::floor);
-            break;
-        case Elements::man_goal:
+        case Elements::man:
             man_pos = p;
-            _m_empty_room->set(p, Elements::floor);
-            break;
-        case Elements::box_goal:
-            box_index.push_back(p);
-            _m_empty_room->set(p, Elements::floor);
             break;
         default:
             break;
@@ -47,7 +34,7 @@ bool BoardParam::man_move(Direction &d)
 
     Pos to = pos_move(man(), d);
 
-    if (!empty_room()->isInMatrix(to))
+    if (!globals::empty_room()->isInMatrix(to))
         return false;
 
     if (is_wall(to)) {
@@ -56,7 +43,7 @@ bool BoardParam::man_move(Direction &d)
 
     if (is_box(to)) {
         Pos too = pos_move(to, d);
-        if (!empty_room()->isInMatrix(too))
+        if (!globals::empty_room()->isInMatrix(too))
             return false;
 
         if (!is_wall(too)) {
@@ -75,7 +62,7 @@ bool BoardParam::man_move(Direction &d)
 
 ElementsMatrix BoardParam::cache_room() const
 {
-    auto em = *empty_room();
+    auto em = *globals::empty_room();
     for (auto p : boxes()) {
         em.set(p, Elements::box);
     }
@@ -87,10 +74,10 @@ ElementsMatrix BoardParam::cache_room() const
 void BoardParam::box_move(Pos box, Pos to)
 {
     assert(pos_to(box, to) != Direction::NotValid);
-    assert(empty_room()->isInMatrix(box));
-    assert(empty_room()->isInMatrix(to));
+    assert(globals::empty_room()->isInMatrix(box));
+    assert(globals::empty_room()->isInMatrix(to));
     assert(is_box(box));
-    assert(empty_room()->get(box)!=Elements::wall);
+    assert(globals::empty_room()->get(box)!=Elements::wall);
     assert(!is_box(to));
     assert(box == Pos((man().row()+to.row())/2, (man().col()+to.col())/2));
 
@@ -130,7 +117,7 @@ std::list<BoardParam> BoardParam::next_move() const
 
 bool BoardParam::can_box_move(Pos box, Direction d) const
 {
-    assert(empty_room()->isInMatrix(box));
+    assert(globals::empty_room()->isInMatrix(box));
     assert(is_box(box));
 
     Pos to = pos_move(box, d);
@@ -148,14 +135,12 @@ bool BoardParam::can_box_move(Pos box, Direction d) const
 bool BoardParam::precise_equal(const BoardParam &param) const
 {
     //assert(goals() == param.goals());
-    assert(empty_room() == param.empty_room());
     return man() == param.man() && is_same_boxes(param);
 }
 
 bool BoardParam::like_equal(const BoardParam &param) const
 {
     //assert(goals() == param.goals());
-    assert(empty_room() == param.empty_room());
     return is_same_boxes(param) && RoomSlice(*this).can_man_to(param.man());
 }
 
@@ -229,7 +214,7 @@ bool BoardParam::is_absolutely_dead_box(Pos box) const
             Pos pos4(pos1.row()+1, pos1.col()+1);
             if (is_occupied(pos1) && is_occupied(pos2) && is_occupied(pos3) && is_occupied(pos4))
             {
-                std::cout << "find deadlock\n";
+                //std::cout << "find deadlock\n";
                 return true;
             }
         }
@@ -246,7 +231,7 @@ bool BoardParam::is_absolutely_dead() const
 
 ElementsMatrix BoardParam::to_matrix() const
 {
-    ElementsMatrix m = *empty_room();
+    ElementsMatrix m = *globals::empty_room();
 
     m.set(man(), Elements::man);
 
@@ -265,6 +250,9 @@ BoardParam BoardParam::to_goal() const
 {
     BoardParam pa = *this;
     pa.box_index = globals::getOriginGoals();
+    for (auto p : pa.boxes())
+        pa.boxMat.set(p, Elements::box);
+    assert(pa.is_done());
     return pa;
 }
 
@@ -282,7 +270,6 @@ bool BoardParam::can_solve(const MoveList &mlst) const
 bool operator ==(const BoardParam &p1, const BoardParam &p2)
 {
     //assert(p1.goals() == p2.goals());
-    assert(p1.empty_room() == p2.empty_room());
 
     // 这里需要特殊处理完成的状态，因为完成时人在哪里也不知道，所以特殊处理
     if (p1.is_done() && p2.is_done())

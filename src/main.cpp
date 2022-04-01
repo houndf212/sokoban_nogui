@@ -107,7 +107,12 @@ void tryOne(const char *pFile)
         print(em);
         cout << "Solution\n";
         print(ml);
+        cout << "\n";
         cout << "solver time: " << ms << "ms" <<endl;
+    }
+    else
+    {
+        cout << "Error!\n";
     }
 
 }

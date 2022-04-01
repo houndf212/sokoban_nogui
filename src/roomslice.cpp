@@ -3,14 +3,14 @@
 RoomSlice::RoomSlice(const BoardParam &pa)
     :param(pa)
 {
-    slice.resize(param.empty_room()->row_size(), param.empty_room()->col_size(), k_unflagged);
+    slice.resize(globals::empty_room()->row_size(), globals::empty_room()->col_size(), k_unflagged);
 
     for (auto p : param.boxes()) {
         slice.set(p, k_block);
     }
 
     IntMatrix::value_type g = 1;
-    for (auto it=param.empty_room()->range(); it; ++it) {
+    for (auto it=globals::empty_room()->range(); it; ++it) {
         Pos p = it.pos();
         if (slice.get(p) != k_unflagged)
             continue;
