@@ -33,6 +33,22 @@ void print(const PosVector &vec)
 }
 
 template<>
+void print(const BoolMatrix &m)
+{
+    for (int row=0; row<m.row_size(); ++row)
+    {
+        for (int col=0; col<m.col_size(); ++col)
+        {
+            //cout.width(2);
+            cout<<int(m.get(row, col));
+            cout<<" ";
+        }
+        cout<<endl;
+    }
+    cout<<endl;
+}
+
+template<>
 void print(const IntMatrix &m)
 {
     for (auto row=m.szero(); row<m.row_size(); ++row) {
