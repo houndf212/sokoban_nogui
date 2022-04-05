@@ -29,6 +29,7 @@ SOURCES += \
         test_matrixgraph.cpp \
         test_munkres.cpp \
         test_print.cpp \
+        util.cpp \
         xsb.cpp
 
 HEADERS += \
@@ -58,4 +59,5 @@ HEADERS += \
     preprocess.h \
     roomslice.h \
     types.h \
+    util.h \
     xsb.h

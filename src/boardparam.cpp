@@ -85,7 +85,7 @@ void BoardParam::box_move(Pos box, Pos to)
     auto it = std::find(begin(box_index), end(box_index), box);
     assert(it != end(box_index));
     *it = to;
-    boxMat.set(box, Elements::floor);
+    boxMat.set(box, Elements::floor1);
     boxMat.set(to , Elements::box);
 }
 

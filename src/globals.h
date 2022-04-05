@@ -32,7 +32,7 @@ enum struct ePosition
 */
 constexpr int deltaPosSize = 4;
 constexpr ePosition deltaPos[deltaPosSize] = {ePosition::eUp, ePosition::eRight, ePosition::eDown, ePosition::eLeft};
-constexpr Pos gFourPos[deltaPosSize] = {Pos(-1, 0), Pos(-1, 0), Pos(-1, 0), Pos(-1, 0)};
+constexpr Pos gFourPos[deltaPosSize] = {Pos(-1, 0), Pos(0, 1), Pos(1, 0), Pos(0, -0)};
 inline void pos_add(Pos &p1, Pos p2) { p1.row() += p2.row(); p1.col() += p2.col(); }
 inline Pos getPosition(Pos p, ePosition e) { pos_add(p, gFourPos[int(e)]); return p; }
 }

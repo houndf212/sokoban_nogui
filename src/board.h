@@ -2,6 +2,7 @@
 #define BOARD_H
 
 #include "types.h"
+#include "util.h"
 
 namespace boardUtil
 {

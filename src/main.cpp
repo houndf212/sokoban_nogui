@@ -142,7 +142,7 @@ int main(int argc, char *argv[])
         readSolutionFile(pFile);
     else if (0 == strcmp(mode, "-read"))
         readXSokobanFile(pFile);
-    else if (0 == strcmp(mode, "-tryone"))
+    else if (0 == strcmp(mode, "-try"))
         tryOne(pFile);
 
     return 0;

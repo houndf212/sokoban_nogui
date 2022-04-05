@@ -4,9 +4,12 @@
 
 namespace PreProcess
 {
-    int sanity_checks(board &b);
+    bool sanity_checks(const board &b);
     void close_holes_in_board(board &b);
     void remove_boxes_out_of_inner(board &b);
+    //把无用的box转换成 wall
+    void turn_decorative_boxes_to_walls(board &b);
+    int preprocess_level(board &b);
 }
 
 #endif // PREPROCESS_H
