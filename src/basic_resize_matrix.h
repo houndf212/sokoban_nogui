@@ -127,7 +127,7 @@ private:
 
     void resize_col(size_type col, value_type val)
     {
-        assert(col_size() != val);
+        assert(col_size() != col);
         for (auto &vec : mat) {
             vec.resize(col, val);
         }
