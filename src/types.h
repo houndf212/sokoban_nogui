@@ -20,6 +20,7 @@ typedef Basic_Pos<type_size> Pos;
 typedef Basic_Resize_Matrix<bool, type_size> BoolMatrix;
 typedef Basic_Resize_Matrix<type_value, type_size> IntMatrix;
 typedef Basic_Resize_Matrix<Elements, type_size> ElementsMatrix;
+using board = ElementsMatrix;
 
 typedef std::vector<Pos> PosVector;
 typedef std::list<Pos> PosList;

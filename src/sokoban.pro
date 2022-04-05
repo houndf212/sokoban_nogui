@@ -6,6 +6,7 @@ CONFIG -= qt
 QMAKE_CXXFLAGS_RELEASE += -DNDEBUG
 
 SOURCES += \
+        board.cpp \
         boardgraph.cpp \
         boardparam.cpp \
         check_matrix_iterator.cpp \
@@ -16,6 +17,7 @@ SOURCES += \
         matrix.cpp \
         matrixgraph.cpp \
         movelist.cpp \
+        preprocess.cpp \
         roomslice.cpp \
         test_assignmentproblem.cpp \
         test_boardgraph.cpp \
@@ -37,6 +39,7 @@ HEADERS += \
     basic_matrix_row_iterator.h \
     basic_pos.h \
     basic_resize_matrix.h \
+    board.h \
     boardgraph.h \
     boardparam.h \
     debug_print.h \
@@ -52,6 +55,7 @@ HEADERS += \
     movedirection.h \
     movelist.h \
     munkres.h \
+    preprocess.h \
     roomslice.h \
     types.h \
     xsb.h

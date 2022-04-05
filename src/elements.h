@@ -15,6 +15,28 @@ enum class Elements : Elements_t
     box_goal = box|goal, // 0111
 };
 
+constexpr Elements_t OCCUPIED = Elements_t(Elements::wall) | Elements_t(Elements::box);
+constexpr Elements SOKOBAN = Elements::man;
+inline
+bool EleHas(Elements e1, Elements e2)
+{
+    return static_cast<Elements_t>(e1) & static_cast<Elements_t>(e2);
+}
+
+inline
+bool EleHas(Elements e1, Elements_t e2)
+{
+    assert(e2 == OCCUPIED);
+    return static_cast<Elements_t>(e1) & e2;
+}
+
+inline
+Elements EleOr(Elements e1, Elements e2)
+{
+    Elements_t e = static_cast<Elements_t>(e1) | static_cast<Elements_t>(e2);
+    return static_cast<Elements>(e);
+}
+
 template<Elements e>
 constexpr Elements_t EtoInt()
 {

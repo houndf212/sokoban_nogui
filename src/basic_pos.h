@@ -1,6 +1,7 @@
 ﻿#ifndef BASIC_POS_H
 #define BASIC_POS_H
 #include <cstdlib>
+#include <functional>
 #include "movedirection.h"
 
 template <typename T>
@@ -10,7 +11,7 @@ public:
     typedef T value_type;
     Basic_Pos() = default;
 
-    Basic_Pos(T row, T col) : m_row(row), m_col(col) {}
+    constexpr Basic_Pos(T row, T col) : m_row(row), m_col(col) {}
 
     const T& row() const { return m_row; }
     const T& col() const { return m_col; }
