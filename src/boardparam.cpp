@@ -7,7 +7,6 @@ void BoardParam::set_matrix(const ElementsMatrix &m)
 {
     globals::setOriginBoard(m);
     box_index.clear();
-    boxMat = m;
 
     for (auto it=m.range(); it; ++it) {
         Pos p = it.pos();
@@ -26,6 +25,9 @@ void BoardParam::set_matrix(const ElementsMatrix &m)
     }
     box_index.shrink_to_fit();
     sort_boxes_index();
+    boxMat.resize(m.row_size(), m.col_size(), false);
+    for (auto p : box_index)
+        boxMat.set(p, true);
 }
 
 bool BoardParam::man_move(Direction &d)
@@ -85,8 +87,8 @@ void BoardParam::box_move(Pos box, Pos to)
     auto it = std::find(begin(box_index), end(box_index), box);
     assert(it != end(box_index));
     *it = to;
-    boxMat.set(box, Elements::floor1);
-    boxMat.set(to , Elements::box);
+    boxMat.set(box, false);
+    boxMat.set(to , true);
 }
 
 std::list<BoardParam> BoardParam::next_move() const
@@ -174,7 +176,7 @@ bool BoardParam::is_box(Pos p) const
 #if 0
     return std::find(box_index.begin(), box_index.end(), p) != box_index.end();
 #else
-    return boxMat.get(p) == Elements::box;
+    return boxMat.get(p);
 #endif
 }
 
@@ -255,7 +257,7 @@ BoardParam BoardParam::to_goal() const
     BoardParam pa = *this;
     pa.box_index = globals::getOriginGoals();
     for (auto p : pa.boxes())
-        pa.boxMat.set(p, Elements::box);
+        pa.boxMat.set(p, true);
     assert(pa.is_done());
     return pa;
 }

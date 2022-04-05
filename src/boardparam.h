@@ -74,7 +74,7 @@ private:
     Pos man_pos;
     // box 的索引
     PosVector box_index;
-    ElementsMatrix boxMat;
+    BoolMatrix boxMat;
     //目标位置, set之后就不会变了
     //std::shared_ptr<const PosVector> m_goals;
     //只包含 wall floor的"空"房子,和goals一样，set之后就不会变了
