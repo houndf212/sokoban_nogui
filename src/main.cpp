@@ -5,6 +5,8 @@
 #include <string.h>
 #include <chrono>
 #include "debug_print.h"
+#include "preprocess.h"
+#include "board.h"
 
 using namespace std;
 using namespace XSB;
@@ -91,6 +93,9 @@ void tryOne(const char *pFile)
         return;
     }
 
+    PreProcess::preprocess_level(em);
+    boardUtil::copy_board(boardUtil::initial_board, em);
+
     BoardParam param;
     param.set_matrix(em);
 
@@ -108,13 +113,39 @@ void tryOne(const char *pFile)
         cout << "Solution\n";
         print(ml);
         cout << "\n";
-        cout << "solver time: " << ms << "ms" <<endl;
+        cout << "Solver time: " << ms << "ms" <<endl;
     }
     else
     {
         cout << "Error!\n";
     }
+}
 
+void preprocessLevelFile(const char *pFile)
+{
+    std::list<XsokobanLevelInfo> lst;
+    parseLevelFile(lst, pFile);
+    cout << "read xsokoban level size: " << lst.size() <<endl;
+
+    for (const XsokobanLevelInfo &info : lst)
+    {
+        cout << info.level <<endl;
+        board m = info.xsbMat;
+        PreProcess::preprocess_level(m);
+        boardUtil::copy_board(boardUtil::initial_board, m);
+        for (auto row=m.szero(); row<m.row_size(); ++row) {
+            for (auto &e : m.row_range(row)) {
+                cout<<XSB::e_to_char(e);
+                //cout<<" ";
+            }
+            cout<<endl;
+        }
+        cout << endl;
+        cout << info.title <<endl;
+        cout << info.author <<endl;
+        cout << endl;
+        cout << endl;
+    }
 }
 
 void printUsge()
@@ -144,6 +175,8 @@ int main(int argc, char *argv[])
         readXSokobanFile(pFile);
     else if (0 == strcmp(mode, "-try"))
         tryOne(pFile);
+    else if (0 == strcmp(mode, "-pre"))
+        preprocessLevelFile(pFile);
 
     return 0;
 }

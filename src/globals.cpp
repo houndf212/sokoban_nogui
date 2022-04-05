@@ -9,9 +9,10 @@ PosVector global_goals;
 void setOriginBoard(const ElementsMatrix &b)
 {
     global_origin_board = b;
+    global_goals.clear();
     for (auto it = b.begin(); it != b.end(); ++it)
     {
-        if (*it == Elements::goal)
+        if (*it & Elements::goal)
             global_goals.push_back(it.pos());
     }
     global_goals.shrink_to_fit();

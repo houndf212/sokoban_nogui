@@ -16,9 +16,10 @@ enum Elements : Elements_t
 };
 
 constexpr Elements_t OCCUPIED = Elements::wall | Elements::box;
-constexpr Elements_t SOKOBAN  = Elements::man;
-constexpr Elements_t BOX      = Elements::box;
-constexpr Elements_t TARGET   = Elements::goal;
+constexpr Elements SOKOBAN  = Elements::man;
+constexpr Elements BOX      = Elements::box;
+constexpr Elements TARGET   = Elements::goal;
+constexpr Elements WALL     = Elements::wall;
 
 template<Elements e>
 constexpr Elements_t EtoInt()

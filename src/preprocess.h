@@ -9,7 +9,7 @@ namespace PreProcess
     void remove_boxes_out_of_inner(board &b);
     //把无用的box转换成 wall
     void turn_decorative_boxes_to_walls(board &b);
-    int preprocess_level(board &b);
+    bool preprocess_level(board &b);
 }
 
 #endif // PREPROCESS_H
