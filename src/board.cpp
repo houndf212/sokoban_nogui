@@ -8,8 +8,8 @@ BoolMatrix boardUtil::inner;
 int boardUtil::index_num = 0;
 
 //记录inner board index 和  xy的转换
-static int y_x_to_index_table[MAX_SIZE][MAX_SIZE];
-static Pos index_to_x_y[MAX_INNER];
+FixedMatix<int, MAX_SIZE, MAX_SIZE>  indexTable;
+FixedVector<Pos, MAX_INNER>  innerPosVec;
 
 int boardUtil::boxes_in_level(const board &b)
 {
@@ -40,8 +40,7 @@ void boardUtil::clear_boxes(const board &b, board &board_without_boxes)
 
 void boardUtil::expand_sokoban_cloud(board &b)
 {
-    Pos que[MAX_SIZE*MAX_SIZE];
-    int queue_len = 0;
+    FixedVector<Pos, MAX_INNER> que;
     int queue_pos = 0;
 
     // init queue from existing player positions
@@ -51,14 +50,13 @@ void boardUtil::expand_sokoban_cloud(board &b)
             Pos p(i, j);
             if (b.get(p) & SOKOBAN)
             {
-                que[queue_len] = p;
-                queue_len++;
+                que.append(p);
             }
         }
 
-    while (queue_pos < queue_len)
+    while (queue_pos < que.size())
     {
-        Pos p = que[queue_pos];
+        Pos p = que.at(queue_pos);
         for (auto e : globals::deltaPos)
         {
             Pos next = globals::getPosition(p, e);
@@ -68,8 +66,7 @@ void boardUtil::expand_sokoban_cloud(board &b)
 
             b.set(next, Elements(ne | SOKOBAN));
 
-            que[queue_len] = next;
-            queue_len++;
+            que.append(next);
         }
         queue_pos++;
     }
@@ -102,31 +99,30 @@ void boardUtil::init_index_x_y()
     {
         for (int j = 0; j < inner.col_size(); j++)
         {
-            y_x_to_index_table[i][j] = -1;
+            indexTable.at(i, j) = -1;
 
             if (inner.get(i, j) == false)
                 continue;
 
-            y_x_to_index_table[i][j] = num;
-            index_to_x_y[num] = Pos(i, j);
-            num++;
+            indexTable.at(i,j) = num;
+            innerPosVec.append(i, j);
 
             if (num >= MAX_INNER)
                 util::exit_with_error("inner too big");
 
         }
     }
-    index_num = num;
+    index_num = innerPosVec.size();
 }
 
 int boardUtil::y_x_to_index(const Pos &p)
 {
-    return y_x_to_index_table[p.row()][p.col()];
+    return indexTable.at(p);
 }
 
 void boardUtil::index_to_y_x(int index, Pos &p)
 {
-    p = index_to_x_y[index];
+    p = innerPosVec.at(index);
 }
 
 void boardUtil::keep_boxes_in_inner(board &b)
@@ -165,4 +161,11 @@ void boardUtil::get_sokoban_position(const board b, Pos &p)
 
     print_board(b);
     util::exit_with_error("Sokoban not found\n");
+}
+
+void boardUtil::zero_board(board &b)
+{
+    for (int i = 0; i < b.row_size(); i++)
+        for (int j = 0; j < b.col_size(); j++)
+            b.set(i, j, SPACE);
 }

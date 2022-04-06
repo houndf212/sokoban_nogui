@@ -3,6 +3,7 @@
 
 #include "types.h"
 #include "util.h"
+#include "fixedvector.h"
 #include "debug_print.h"
 
 inline
@@ -24,6 +25,7 @@ void copy_board(const board &from, board &to)
 {
     to = from;
 }
+void zero_board(board &b);
 
 int boxes_in_level(const board &b);
 void get_sokoban_position(const board b, Pos &p);

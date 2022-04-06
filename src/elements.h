@@ -16,6 +16,7 @@ enum Elements : Elements_t
 };
 
 constexpr Elements_t OCCUPIED = Elements::wall | Elements::box;
+constexpr Elements SPACE    = Elements::floor1;
 constexpr Elements SOKOBAN  = Elements::man;
 constexpr Elements BOX      = Elements::box;
 constexpr Elements TARGET   = Elements::goal;

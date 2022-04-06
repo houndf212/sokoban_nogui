@@ -46,6 +46,7 @@ HEADERS += \
     debug_print.h \
     dijkstra.h \
     elements.h \
+    fixedvector.h \
     global.h \
     globals.h \
     hungarianalg.h \
