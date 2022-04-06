@@ -27,7 +27,7 @@ void setOriginBoard(const ElementsMatrix &b)
         case Elements::wall:
             break;
         default:
-            global_inner_board.set(p, Elements::floor1);
+            global_inner_board.set(p, SPACE);
             break;
         }
     }

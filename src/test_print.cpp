@@ -5,7 +5,7 @@ void test_print()
     Pos p(1, 2);
     print(p);
 
-    ElementsMatrix m(3, 3, Elements::floor1);
+    ElementsMatrix m(3, 3, SPACE);
 
     m.set(Pos(0,0), Elements::man);
 

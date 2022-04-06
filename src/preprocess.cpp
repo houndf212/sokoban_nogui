@@ -28,7 +28,7 @@ void PreProcess::close_holes_in_board(board &b)
             for (int c=1; c<b.col_size()-1; ++c)
             {
                 Pos p(r, c);
-                if (b.get(p) != Elements::floor1) continue;
+                if (b.get(p) != SPACE) continue;
 
                 int sum = 0;
                 for (auto e : globals::deltaPos)

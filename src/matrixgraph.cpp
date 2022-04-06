@@ -9,7 +9,7 @@ MatrixGraph::MatrixGraph(const ElementsMatrix &m)
 {
     for (auto it=m.range(); it; ++it) {
         //mask表示可行路径
-        if (*it == Elements::floor1)
+        if (*it == SPACE)
             matrix.mask(it.pos());
     }
 }

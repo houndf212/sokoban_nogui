@@ -23,7 +23,7 @@ char XSB::e_to_char(Elements_t e)
         return '#';
     case Elements::goal:
         return '.';
-    case Elements::floor1:
+    case SPACE:
         return '-';
     }
     assert(false);
@@ -48,12 +48,12 @@ Elements_t XSB::char_to_e(char c)
     case ' ':
     case '-':
     case '_':
-        return Elements::floor1;
+        return SPACE;
     default:
         assert(false);
         break;
     }
-    return Elements::floor1;
+    return SPACE;
 }
 
 ElementsMatrix XSB::from_file(const char *filestr)
@@ -152,7 +152,7 @@ static void test_set_range(const R &range)
     for (auto &v : range) {
         if (v != Elements::wall) {
             //这里说明room不是被墙包裹的
-            assert(v == Elements::floor1);
+            assert(v == Elements::SPACE);
             v = Elements::wall;
         }
         else
@@ -184,7 +184,7 @@ static bool is_wall_range(const R &range)
 
 static ElementsMatrix remove_row(type_size row, const ElementsMatrix &m)
 {
-    ElementsMatrix em(m.row_size()-1, m.col_size(), Elements::floor1);
+    ElementsMatrix em(m.row_size()-1, m.col_size(), SPACE);
 
     for (auto r=m.szero(); r<m.row_size(); ++r) {
         if (r == row) continue;
@@ -196,7 +196,7 @@ static ElementsMatrix remove_row(type_size row, const ElementsMatrix &m)
 
 static ElementsMatrix remove_col(type_size col, const ElementsMatrix &m)
 {
-    ElementsMatrix em(m.row_size(), m.col_size()-1, Elements::floor1);
+    ElementsMatrix em(m.row_size(), m.col_size()-1, SPACE);
 
     for (auto c=m.szero(); c<m.col_size(); ++c) {
         if (c == col) continue;
@@ -251,7 +251,7 @@ ElementsMatrix XSB::from_stringList(std::list<std::string> lst)
     }
     type_size row_size = lst.size();
 
-    ElementsMatrix em(row_size, col_size, Elements::floor1);
+    ElementsMatrix em(row_size, col_size, SPACE);
 
     int row = 0;
     for (const auto &line : lst)

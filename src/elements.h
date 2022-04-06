@@ -5,23 +5,22 @@
 typedef unsigned char Elements_t;
 enum Elements : Elements_t
 {
-    floor1 = 0,
     wall = 1,
     box = 2,
     goal = 4,
     man = 8,
 };
 
-static_assert (floor1 == 0, "");
+constexpr Elements_t SPACE    = 0;
+constexpr Elements_t WALL     = 1;
+constexpr Elements_t BOX      = 2;
+constexpr Elements_t TARGET   = 4;
+constexpr Elements_t SOKOBAN  = 8;
 
-constexpr Elements_t OCCUPIED = Elements::wall | Elements::box;
-constexpr Elements_t SPACE    = Elements::floor1;
-constexpr Elements_t SOKOBAN  = Elements::man;
-constexpr Elements_t BOX      = Elements::box;
-constexpr Elements_t TARGET   = Elements::goal;
-constexpr Elements_t WALL     = Elements::wall;
+constexpr Elements_t OCCUPIED = WALL | BOX;
 
-template<Elements e>
+
+template<Elements_t e>
 constexpr Elements_t EtoInt()
 {
     return static_cast<Elements_t>(e);
@@ -30,7 +29,7 @@ constexpr Elements_t EtoInt()
 inline Elements_t add_goal(Elements_t e)
 {
     assert(e != Elements::wall);
-    static_assert((EtoInt<Elements::floor1>()|EtoInt<Elements::goal>()) == EtoInt<Elements::goal>(),"");
+    static_assert((EtoInt<SPACE>()|EtoInt<Elements::goal>()) == EtoInt<Elements::goal>(),"");
     return Elements(Elements_t(e)|EtoInt<Elements::goal>());
 }
 
