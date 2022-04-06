@@ -18,7 +18,7 @@ int boardUtil::boxes_in_level(const board &b)
     for (int i = 0; i < b.row_size(); i++)
         for (int j = 0; j < b.col_size(); j++)
         {
-            auto e = b.get(Pos(i, j));
+            auto e = b.get(i, j);
             if (e & Elements::BOX)
                 sum++;
         }
@@ -32,9 +32,7 @@ void boardUtil::clear_boxes(const board &b, board &board_without_boxes)
     for (int i = 0; i < b.row_size(); i++)
         for (int j = 0; j < b.col_size(); j++)
         {
-            Pos p(i, j);
-            auto e = board_without_boxes.get(p);
-            board_without_boxes.set(p, e & ~Elements::BOX);
+            board_without_boxes.at(i, j) &= ~Elements::BOX;
         }
 }
 
@@ -64,8 +62,7 @@ void boardUtil::expand_sokoban_cloud(board &b)
             if (ne & SOKOBAN) continue;
             if (ne & OCCUPIED) continue;
 
-            b.set(next, ne | SOKOBAN);
-
+            b.at(next) |= SOKOBAN;
             que.append(next);
         }
         queue_pos++;
@@ -132,7 +129,7 @@ void boardUtil::keep_boxes_in_inner(board &b)
         {
             if (inner.get(i, j) == false)
                 if (b.get(i, j) & BOX)
-                    b.set(i, j, WALL);
+                    b.at(i, j) = WALL;
         }
 }
 
@@ -167,5 +164,5 @@ void boardUtil::zero_board(board &b)
 {
     for (int i = 0; i < b.row_size(); i++)
         for (int j = 0; j < b.col_size(); j++)
-            b.set(i, j, SPACE);
+            b.at(i, j) = SPACE;
 }
