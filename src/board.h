@@ -5,6 +5,7 @@
 #include "util.h"
 #include "fixedvector.h"
 #include "debug_print.h"
+#include "globals.h"
 
 inline
 void print_board(const board &b)

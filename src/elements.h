@@ -28,7 +28,7 @@ constexpr Elements_t EtoInt()
     return static_cast<Elements_t>(e);
 }
 
-inline Elements add_goal(Elements e)
+inline Elements_t add_goal(Elements_t e)
 {
     assert(e != Elements::wall);
     static_assert((EtoInt<Elements::man>()|EtoInt<Elements::goal>()) == EtoInt<Elements::man_goal>(),"");

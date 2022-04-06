@@ -8,7 +8,7 @@ using namespace XSB;
 using namespace std;
 
 
-char XSB::e_to_char(Elements e)
+char XSB::e_to_char(Elements_t e)
 {
     switch (e) {
     case Elements::man:
@@ -178,7 +178,7 @@ void XSB::replace_outer_floor(ElementsMatrix &m)
 template <class R>
 static bool is_wall_range(const R &range)
 {
-    auto equal_wall = [](Elements e) { return e == Elements::wall; };
+    auto equal_wall = [](Elements_t e) { return e == Elements::wall; };
     return std::all_of(range.begin(), range.end(), equal_wall);
 }
 

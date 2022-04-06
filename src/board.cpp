@@ -18,7 +18,7 @@ int boardUtil::boxes_in_level(const board &b)
     for (int i = 0; i < b.row_size(); i++)
         for (int j = 0; j < b.col_size(); j++)
         {
-            Elements e = b.get(Pos(i, j));
+            auto e = b.get(Pos(i, j));
             if (e & Elements::box)
                 sum++;
         }
@@ -33,7 +33,7 @@ void boardUtil::clear_boxes(const board &b, board &board_without_boxes)
         for (int j = 0; j < b.col_size(); j++)
         {
             Pos p(i, j);
-            Elements e = board_without_boxes.get(p);
+            auto e = board_without_boxes.get(p);
             board_without_boxes.set(p, Elements(e & ~Elements::box));
         }
 }
