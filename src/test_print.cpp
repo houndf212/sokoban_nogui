@@ -7,11 +7,11 @@ void test_print()
 
     ElementsMatrix m(3, 3, SPACE);
 
-    m.set(Pos(0,0), Elements::man);
+    m.set(Pos(0,0), Elements::SOKOBAN);
 
-    m.set(Pos(0,1), Elements::box);
+    m.set(Pos(0,1), Elements::BOX);
 
-    m.set(Pos(0,2), Elements::goal);
+    m.set(Pos(0,2), Elements::TARGET);
 
     print(m);
 }

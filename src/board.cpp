@@ -19,7 +19,7 @@ int boardUtil::boxes_in_level(const board &b)
         for (int j = 0; j < b.col_size(); j++)
         {
             auto e = b.get(Pos(i, j));
-            if (e & Elements::box)
+            if (e & Elements::BOX)
                 sum++;
         }
     return sum;
@@ -34,7 +34,7 @@ void boardUtil::clear_boxes(const board &b, board &board_without_boxes)
         {
             Pos p(i, j);
             auto e = board_without_boxes.get(p);
-            board_without_boxes.set(p, Elements(e & ~Elements::box));
+            board_without_boxes.set(p, e & ~Elements::BOX);
         }
 }
 
@@ -64,7 +64,7 @@ void boardUtil::expand_sokoban_cloud(board &b)
             if (ne & SOKOBAN) continue;
             if (ne & OCCUPIED) continue;
 
-            b.set(next, Elements(ne | SOKOBAN));
+            b.set(next, ne | SOKOBAN);
 
             que.append(next);
         }

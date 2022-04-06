@@ -34,13 +34,13 @@ void PreProcess::close_holes_in_board(board &b)
                 for (auto e : globals::deltaPos)
                 {
                     Pos p1 = globals::getPosition(p, e);
-                    if (b.get(p1) == Elements::wall)
+                    if (b.get(p1) == Elements::WALL)
                         sum++;
                 }
 
                 if (sum >= 3)
                 {
-                    b.set(p, Elements::wall);
+                    b.set(p, Elements::WALL);
                     changed = true;
                 }
             }
@@ -61,10 +61,8 @@ void PreProcess::remove_boxes_out_of_inner(board &b)
         for (int j = 0; j < b.col_size(); j++)
             if ((inner.get(i, j) & SOKOBAN) == 0)
             {
-                Elements_t e = inner.get(i, j);
-                e &= ~BOX;
-                e &= ~TARGET;
-                b.set(i, j, Elements(e));
+                auto e = inner.get(i, j);
+                b.set(i, j, e & ~BOX & ~TARGET);
             }
 }
 
@@ -119,7 +117,7 @@ void PreProcess::turn_decorative_boxes_to_walls(board &b)
                     Pos p2 = globals::getPosition(p1, ep);
                     if ((c.get(p1) & OCCUPIED) == 0 && (c.get(p2) & OCCUPIED) == 0)
                     {
-                        c.set(i, j, Elements(c.get(i, j) & ~BOX));
+                        c.set(i, j, c.get(i, j) & ~BOX);
                         changed = true;
                         break;
                     }
@@ -188,7 +186,7 @@ void PreProcess::turn_decorative_boxes_to_walls(board &b)
 
                 if (!(c.get(p1) & OCCUPIED) && !(c.get(p2) & OCCUPIED))
                 {
-                    c.set(boxp, Elements(c.get(boxp) & ~BOX));
+                    c.set(boxp, c.get(boxp) & ~BOX);
                     changed = true;
                     break;
                 }
@@ -198,7 +196,7 @@ void PreProcess::turn_decorative_boxes_to_walls(board &b)
 
                 if (!(c.get(p1) & OCCUPIED) && !(c.get(p2) & OCCUPIED))
                 {
-                    c.set(boxp, Elements(c.get(boxp) & ~BOX));
+                    c.set(boxp, c.get(boxp) & ~BOX);
                     changed = true;
                     break;
                 }

@@ -39,7 +39,7 @@ public:
     bool is_done() const;
     bool is_wall(Pos p) const
     {
-        return globals::empty_room()->get(p) == Elements::wall;
+        return globals::empty_room()->get(p) == Elements::WALL;
     }
     bool is_goal(Pos p) const;
     bool is_box(Pos p) const;

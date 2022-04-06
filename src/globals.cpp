@@ -12,7 +12,7 @@ void setOriginBoard(const ElementsMatrix &b)
     global_goals.clear();
     for (auto it = b.begin(); it != b.end(); ++it)
     {
-        if (*it & Elements::goal)
+        if (*it & Elements::TARGET)
             global_goals.push_back(it.pos());
     }
     global_goals.shrink_to_fit();
@@ -24,7 +24,7 @@ void setOriginBoard(const ElementsMatrix &b)
         auto e = *it;
         switch (e)
         {
-        case Elements::wall:
+        case Elements::WALL:
             break;
         default:
             global_inner_board.set(p, SPACE);

@@ -12,11 +12,11 @@ void BoardParam::set_matrix(const ElementsMatrix &m)
         Pos p = it.pos();
         auto e = *it;
         switch (e) {
-        case (Elements::box | Elements::goal):
-        case Elements::box:
+        case (Elements::BOX | Elements::TARGET):
+        case Elements::BOX:
             box_index.push_back(p);
             break;
-        case Elements::man:
+        case Elements::SOKOBAN:
             man_pos = p;
             break;
         default:
@@ -66,7 +66,7 @@ ElementsMatrix BoardParam::cache_room() const
 {
     auto em = *globals::empty_room();
     for (auto p : boxes()) {
-        em.set(p, Elements::box);
+        em.set(p, Elements::BOX);
     }
     return em;
 }
@@ -167,7 +167,7 @@ bool BoardParam::is_goal(Pos p) const
 #if 0
     return std::find(goals()->begin(), goals()->end(), p) != goals()->end();
 #else
-    return globals::getOriginBoard().get(p) == Elements::goal;
+    return globals::getOriginBoard().get(p) == Elements::TARGET;
 #endif
 }
 
@@ -239,15 +239,15 @@ ElementsMatrix BoardParam::to_matrix() const
 {
     ElementsMatrix m = *globals::empty_room();
 
-    m.set(man(), Elements::man);
+    m.set(man(), Elements::SOKOBAN);
 
     for (auto p : boxes()) {
-        m.set(p, Elements::box);
+        m.set(p, Elements::BOX);
     }
 
     for (auto p : globals::getOriginGoals()) {
         auto e = m.get(p);
-        m.set(p, add_goal(e));
+        m.set(p, e | TARGET);
     }
     return m;
 }

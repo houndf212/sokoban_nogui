@@ -11,17 +11,17 @@ using namespace std;
 char XSB::e_to_char(Elements_t e)
 {
     switch (e) {
-    case Elements::man:
+    case Elements::SOKOBAN:
         return '@';
-    case (Elements::man | Elements::goal):
+    case (Elements::SOKOBAN | Elements::TARGET):
         return '+';
-    case Elements::box:
+    case Elements::BOX:
         return '$';
-    case (Elements::box | Elements::goal):
+    case (Elements::BOX | Elements::TARGET):
         return '*';
-    case Elements::wall:
+    case Elements::WALL:
         return '#';
-    case Elements::goal:
+    case Elements::TARGET:
         return '.';
     case SPACE:
         return '-';
@@ -34,17 +34,17 @@ Elements_t XSB::char_to_e(char c)
 {
     switch (c) {
     case '@':
-        return Elements::man;
+        return Elements::SOKOBAN;
     case '+':
-        return Elements::man | Elements::goal;
+        return Elements::SOKOBAN | Elements::TARGET;
     case '$':
-        return Elements::box;
+        return Elements::BOX;
     case '*':
-        return Elements::box | Elements::goal;
+        return Elements::BOX | Elements::TARGET;
     case '#':
-        return Elements::wall;
+        return Elements::WALL;
     case '.':
-        return Elements::goal;
+        return Elements::TARGET;
     case ' ':
     case '-':
     case '_':
@@ -150,10 +150,10 @@ template <class R>
 static void test_set_range(const R &range)
 {
     for (auto &v : range) {
-        if (v != Elements::wall) {
+        if (v != Elements::WALL) {
             //这里说明room不是被墙包裹的
             assert(v == Elements::SPACE);
-            v = Elements::wall;
+            v = Elements::WALL;
         }
         else
             break;
@@ -178,7 +178,7 @@ void XSB::replace_outer_floor(ElementsMatrix &m)
 template <class R>
 static bool is_wall_range(const R &range)
 {
-    auto equal_wall = [](Elements_t e) { return e == Elements::wall; };
+    auto equal_wall = [](Elements_t e) { return e == Elements::WALL; };
     return std::all_of(range.begin(), range.end(), equal_wall);
 }
 
