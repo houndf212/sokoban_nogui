@@ -13,11 +13,11 @@ char XSB::e_to_char(Elements_t e)
     switch (e) {
     case Elements::man:
         return '@';
-    case Elements::man_goal:
+    case (Elements::man | Elements::goal):
         return '+';
     case Elements::box:
         return '$';
-    case Elements::box_goal:
+    case (Elements::box | Elements::goal):
         return '*';
     case Elements::wall:
         return '#';
@@ -30,17 +30,17 @@ char XSB::e_to_char(Elements_t e)
     return '-';
 }
 
-Elements XSB::char_to_e(char c)
+Elements_t XSB::char_to_e(char c)
 {
     switch (c) {
     case '@':
         return Elements::man;
     case '+':
-        return Elements::man_goal;
+        return Elements::man | Elements::goal;
     case '$':
         return Elements::box;
     case '*':
-        return Elements::box_goal;
+        return Elements::box | Elements::goal;
     case '#':
         return Elements::wall;
     case '.':

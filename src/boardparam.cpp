@@ -12,7 +12,7 @@ void BoardParam::set_matrix(const ElementsMatrix &m)
         Pos p = it.pos();
         auto e = *it;
         switch (e) {
-        case Elements::box_goal:
+        case (Elements::box | Elements::goal):
         case Elements::box:
             box_index.push_back(p);
             break;

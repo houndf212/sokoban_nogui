@@ -11,7 +11,7 @@ namespace XSB
 using std::string;
 
 char e_to_char(Elements_t e);
-Elements char_to_e(char c);
+Elements_t char_to_e(char c);
 
 char d_to_char(Direction d);
 Direction char_to_d(char c);
