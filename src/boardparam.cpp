@@ -79,7 +79,7 @@ void BoardParam::box_move(Pos box, Pos to)
     assert(globals::empty_room()->isInMatrix(box));
     assert(globals::empty_room()->isInMatrix(to));
     assert(is_box(box));
-    assert(globals::empty_room()->get(box)!=Elements::wall);
+    assert(globals::empty_room()->get(box)!=Elements::WALL);
     assert(!is_box(to));
     assert(box == Pos((man().row()+to.row())/2, (man().col()+to.col())/2));
 
