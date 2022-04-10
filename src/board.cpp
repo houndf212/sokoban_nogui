@@ -91,7 +91,6 @@ void boardUtil::init_inner(const board &b)
 
 void boardUtil::init_index_x_y()
 {
-    int num = 0;
     for (int i = 0; i < inner.row_size(); i++)
     {
         for (int j = 0; j < inner.col_size(); j++)
@@ -101,10 +100,10 @@ void boardUtil::init_index_x_y()
             if (inner.get(i, j) == false)
                 continue;
 
-            indexTable.at(i,j) = num;
+            indexTable.at(i,j) = innerPosVec.size();
             innerPosVec.append(i, j);
 
-            if (num >= MAX_INNER)
+            if (innerPosVec.size() >= MAX_INNER)
                 util::exit_with_error("inner too big");
 
         }
