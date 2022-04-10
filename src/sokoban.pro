@@ -10,6 +10,7 @@ SOURCES += \
         boardgraph.cpp \
         boardparam.cpp \
         check_matrix_iterator.cpp \
+        deadlock.cpp \
         debug_print.cpp \
         globals.cpp \
         hungarianalg.cpp \
@@ -43,6 +44,7 @@ HEADERS += \
     board.h \
     boardgraph.h \
     boardparam.h \
+    deadlock.h \
     debug_print.h \
     dijkstra.h \
     elements.h \

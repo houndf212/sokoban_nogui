@@ -166,3 +166,12 @@ void boardUtil::zero_board(board &b)
         for (int j = 0; j < b.col_size(); j++)
             b.at(i, j) = SPACE;
 }
+
+void boardUtil::clear_sokoban_inplace(board &b)
+{
+    int height = b.row_size();
+    int width = b.col_size();
+    for (int i = 0; i < height; i++)
+        for (int j = 0; j < width; j++)
+            b.at(i,j) &= ~SOKOBAN;
+}

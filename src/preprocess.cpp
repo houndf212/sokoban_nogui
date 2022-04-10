@@ -2,7 +2,7 @@
 #include "globals.h"
 #include "debug_print.h"
 #include "board.h"
-
+#include "deadlock.h"
 
 bool PreProcess::sanity_checks(const board &b)
 {
@@ -247,16 +247,9 @@ bool PreProcess::preprocess_level(board &b)
     boardUtil::expand_sokoban_cloud(b);
 
     //printAfterPreProcessInfo();
+
+    deadlock::set_forbidden_tunnel();
 #if 0
-    set_forbidden_tunnel();
-
-    if (verbose >= 3)
-    {
-        printf("\nLevel %d:\n", level_id);
-        print_board(b);
-    }
-
-
     set_distances(b);
 #endif
     return true;

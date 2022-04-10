@@ -30,7 +30,7 @@ void zero_board(board &b);
 
 int boxes_in_level(const board &b);
 void get_sokoban_position(const board b, Pos &p);
-
+void clear_sokoban_inplace(board &b);
 void keep_boxes_in_inner(board &b);
 void clear_boxes(const board &b, board &board_without_boxes);
 void expand_sokoban_cloud(board &b);
@@ -44,5 +44,7 @@ void index_to_y_x(int index, Pos &p);
 
 void save_initial_board(const board &b);
 }
+
+using namespace boardUtil;
 
 #endif // BOARD_H
