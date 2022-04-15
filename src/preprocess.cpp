@@ -217,6 +217,35 @@ void PreProcess::turn_decorative_boxes_to_walls(board &b)
             }
 }
 
+static void getInnerMat(board &b)
+{
+    clear_boxes(initial_board, b);
+    int height = initial_board.row_size();
+    int width  = initial_board.col_size();
+
+    for (int i=0; i<height; ++i)
+        for (int j=0; j<width; ++j)
+        {
+            if (inner.at(i, j))
+                b.at(i, j) = SPACE;
+        }
+
+}
+
+static void getForBiddenTunnelMat(board &f)
+{
+    int height = initial_board.row_size();
+    int width  = initial_board.col_size();
+    clear_boxes(initial_board, f);
+    clear_sokoban_inplace(f);
+    for (int i=0; i<height; ++i)
+        for (int j=0; j<width; ++j)
+        {
+            if (deadlock::forbidden_tunnel.at(i, j))
+                f.at(i, j) = BOX;
+        }
+}
+
 static void printAfterPreProcessInfo()
 {
     int height = boardUtil::initial_board.row_size();
@@ -229,12 +258,16 @@ static void printAfterPreProcessInfo()
     print(boardUtil::global_initial_player);
 
     cout << "inner:\n";
-    print(boardUtil::inner, height, width);
+    board in;
+    getInnerMat(in);
+    print(in);
     cout << "inner size: " << boardUtil::index_num << endl;
     cout << "=======================\n";
 
     cout << "forbidden:\n";
-    print(deadlock::forbidden_tunnel, height, width);
+    board forb;
+    getForBiddenTunnelMat(forb);
+    print(forb);
     cout << "=======================\n";
 }
 
