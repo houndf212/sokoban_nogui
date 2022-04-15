@@ -105,7 +105,21 @@ public:
     }
 
     template<typename U>
+    const value_type & at(Basic_Pos<U> p) const
+    {
+        assert(isInMatrix(p));
+        return mat[p.row()][p.col()];
+    }
+
+    template<typename U>
     value_type & at(U row, U col)
+    {
+        assert(isInMatrix(Basic_Pos<U>(row, col)));
+        return mat[row][col];
+    }
+
+    template<typename U>
+    const value_type & at(U row, U col) const
     {
         assert(isInMatrix(Basic_Pos<U>(row, col)));
         return mat[row][col];

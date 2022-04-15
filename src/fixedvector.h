@@ -28,12 +28,10 @@ public:
         m_arr[m_size] = T(args...);
         m_size++;
     }
-private:
-    void setSize(FIXED_SIZE_TYPE n)
-    {
-        assert(0 <= n && n < N);
-        m_size = n;
-    }
+
+    void clear() { m_size = 0; }
+
+    void setSize(FIXED_SIZE_TYPE n) { assert(n <= N);m_size = n; }
 private:
     T               m_arr[N];
     FIXED_SIZE_TYPE m_size;
@@ -50,6 +48,12 @@ public:
         return at(p.row(), p.col());
     }
     T & at(FIXED_SIZE_TYPE r, FIXED_SIZE_TYPE c)
+    {
+        assert(0 <= r && r < _R  && 0 <= c && c < _C);
+        return m_mat[r][c];
+    }
+
+    const T & at(FIXED_SIZE_TYPE r, FIXED_SIZE_TYPE c) const
     {
         assert(0 <= r && r < _R  && 0 <= c && c < _C);
         return m_mat[r][c];

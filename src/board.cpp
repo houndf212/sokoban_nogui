@@ -4,7 +4,7 @@
 int boardUtil::global_boxes_in_level = 0;
 Pos boardUtil::global_initial_player(0, 0);
 board boardUtil::initial_board;
-BoolMatrix boardUtil::inner;
+FixedMatix<bool, MAX_SIZE, MAX_SIZE> boardUtil::inner;
 int boardUtil::index_num = 0;
 
 //记录inner board index 和  xy的转换
@@ -36,22 +36,24 @@ void boardUtil::clear_boxes(const board &b, board &board_without_boxes)
         }
 }
 
-void boardUtil::expand_sokoban_cloud(board &b)
+static inline void
+getSokobanAllPos(const board &b, FixedVector<Pos, MAX_INNER> &que)
 {
-    FixedVector<Pos, MAX_INNER> que;
-    int queue_pos = 0;
-
     // init queue from existing player positions
     for (int i = 0; i < b.row_size(); i++)
         for (int j = 0; j < b.col_size(); j++)
         {
-            Pos p(i, j);
-            if (b.get(p) & SOKOBAN)
+            if (b.get(i, j) & SOKOBAN)
             {
-                que.append(p);
+                que.append(i, j);
             }
         }
+}
 
+static inline void
+expand_sokoban(board &b, FixedVector<Pos, MAX_INNER> &que)
+{
+    int queue_pos = 0;
     while (queue_pos < que.size())
     {
         Pos p = que.at(queue_pos);
@@ -69,6 +71,21 @@ void boardUtil::expand_sokoban_cloud(board &b)
     }
 }
 
+
+void boardUtil::expand_sokoban_cloud(board &b)
+{
+    FixedVector<Pos, MAX_INNER> que;
+    getSokobanAllPos(b, que);
+    expand_sokoban(b, que);
+}
+void boardUtil::expand_sokoban_cloud_one_sokoban(board &b, Pos p)
+{
+    assert(b.at(p) & SOKOBAN);
+    FixedVector<Pos, MAX_INNER> que;
+    que.append(p);
+    expand_sokoban(b, que);
+}
+
 void boardUtil::init_inner(const board &b)
 {
     board c;
@@ -78,26 +95,27 @@ void boardUtil::init_inner(const board &b)
     expand_sokoban_cloud(c);
 
     // set inner
-    BoolMatrix &in = const_cast<BoolMatrix&>(inner);
-    in.resize(b.row_size(), b.col_size());
+
     for (i = 0; i < b.row_size(); i++)
         for (j = 0; j < b.col_size(); j++)
         {
-            in.set(i, j, false);
+            inner.at(i, j) = false;
             if (c.get(i, j) & SOKOBAN)
-                in.set(i, j, true);
+                inner.at(i, j) = true;
         }
 }
 
 void boardUtil::init_index_x_y()
 {
-    for (int i = 0; i < inner.row_size(); i++)
+    int height = initial_board.row_size();
+    int width = initial_board.col_size();
+    for (int i = 0; i < height; i++)
     {
-        for (int j = 0; j < inner.col_size(); j++)
+        for (int j = 0; j < width; j++)
         {
             indexTable.at(i, j) = -1;
 
-            if (inner.get(i, j) == false)
+            if (inner.at(i, j) == false)
                 continue;
 
             indexTable.at(i,j) = innerPosVec.size();
@@ -126,7 +144,7 @@ void boardUtil::keep_boxes_in_inner(board &b)
     for (int i = 0; i < b.row_size(); i++)
         for (int j = 0; j < b.col_size(); j++)
         {
-            if (inner.get(i, j) == false)
+            if (inner.at(i, j) == false)
                 if (b.get(i, j) & BOX)
                     b.at(i, j) = WALL;
         }
@@ -173,4 +191,16 @@ void boardUtil::clear_sokoban_inplace(board &b)
     for (int i = 0; i < height; i++)
         for (int j = 0; j < width; j++)
             b.at(i,j) &= ~SOKOBAN;
+}
+
+bool boardUtil::board_contains_boxes(const board &b)
+{
+    int height = initial_board.row_size();
+    int width  = initial_board.col_size();
+    for (int i = 0; i < height; i++)
+        for (int j = 0; j < width; j++)
+            if (b.at(i, j) & BOX)
+                return true;
+
+    return false;
 }

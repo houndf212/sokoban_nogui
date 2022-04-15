@@ -6,18 +6,22 @@ QMAKE_CXXFLAGS += -std=c++17
 QMAKE_CXXFLAGS_RELEASE += -DNDEBUG
 
 SOURCES += \
+        bfs.cpp \
         board.cpp \
         boardgraph.cpp \
         boardparam.cpp \
         check_matrix_iterator.cpp \
         deadlock.cpp \
         debug_print.cpp \
+        distance.cpp \
         globals.cpp \
+        graph.cpp \
         hungarianalg.cpp \
         main.cpp \
         matrix.cpp \
         matrixgraph.cpp \
         movelist.cpp \
+        moves.cpp \
         preprocess.cpp \
         roomslice.cpp \
         test_assignmentproblem.cpp \
@@ -41,16 +45,19 @@ HEADERS += \
     basic_matrix_row_iterator.h \
     basic_pos.h \
     basic_resize_matrix.h \
+    bfs.h \
     board.h \
     boardgraph.h \
     boardparam.h \
     deadlock.h \
     debug_print.h \
     dijkstra.h \
+    distance.h \
     elements.h \
     fixedvector.h \
     global.h \
     globals.h \
+    graph.h \
     hungarianalg.h \
     iteratorrange.h \
     maskmatrix.h \
@@ -58,6 +65,7 @@ HEADERS += \
     matrixgraph.h \
     movedirection.h \
     movelist.h \
+    moves.h \
     munkres.h \
     preprocess.h \
     roomslice.h \

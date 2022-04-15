@@ -3,6 +3,7 @@
 #include "debug_print.h"
 #include "board.h"
 #include "deadlock.h"
+#include "distance.h"
 
 bool PreProcess::sanity_checks(const board &b)
 {
@@ -218,6 +219,8 @@ void PreProcess::turn_decorative_boxes_to_walls(board &b)
 
 static void printAfterPreProcessInfo()
 {
+    int height = boardUtil::initial_board.row_size();
+    int width  = boardUtil::initial_board.col_size();
     cout << "======PreProcess=======\n";
     cout << "init_board:\n";
     print_board(boardUtil::initial_board);
@@ -226,8 +229,12 @@ static void printAfterPreProcessInfo()
     print(boardUtil::global_initial_player);
 
     cout << "inner:\n";
-    print(boardUtil::inner);
+    print(boardUtil::inner, height, width);
     cout << "inner size: " << boardUtil::index_num << endl;
+    cout << "=======================\n";
+
+    cout << "forbidden:\n";
+    print(deadlock::forbidden_tunnel, height, width);
     cout << "=======================\n";
 }
 
@@ -246,12 +253,15 @@ bool PreProcess::preprocess_level(board &b)
     boardUtil::save_initial_board(b);
     boardUtil::expand_sokoban_cloud(b);
 
-    //printAfterPreProcessInfo();
 
     deadlock::set_forbidden_tunnel();
-#if 0
+
     set_distances(b);
+
+#ifndef NDEBUG
+    printAfterPreProcessInfo();
 #endif
+
     return true;
 }
 
