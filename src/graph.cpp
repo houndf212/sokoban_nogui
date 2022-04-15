@@ -109,7 +109,7 @@ void init_shift(const board &b)
         int_board zones;
         mark_connectivities_around_place(b, zones, p);
         //回滚
-        mb.at(p) |= ~BOX;
+        mb.at(p) &= ~BOX;
 
         for (auto eFrom : globals::deltaPos)
         {

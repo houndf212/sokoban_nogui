@@ -217,6 +217,20 @@ void PreProcess::turn_decorative_boxes_to_walls(board &b)
             }
 }
 
+static void printIndex()
+{
+    cout << "============="<<endl;
+    cout << "index size: " << index_num <<endl;
+    for (int k=0; k<index_num; ++k)
+    {
+        Pos p;
+        index_to_y_x(k, p);
+        cout << k << "=" <<"("<<p.row() << "," <<p.col() << ")" << endl;;
+    }
+
+    cout << "============="<<endl;
+}
+
 static void getInnerMat(board &b)
 {
     clear_boxes(initial_board, b);
@@ -246,6 +260,21 @@ static void getForBiddenTunnelMat(board &f)
         }
 }
 
+static void getImpossibleMat(board &b)
+{
+    clear_boxes(initial_board, b);
+    clear_sokoban_inplace(b);
+    for (int k =0; k<index_num; ++k)
+    {
+        if (impossible_place.at(k))
+        {
+            Pos p;
+            index_to_y_x(k, p);
+            b.at(p) = BOX;
+        }
+    }
+}
+
 static void printAfterPreProcessInfo()
 {
     int height = boardUtil::initial_board.row_size();
@@ -256,6 +285,8 @@ static void printAfterPreProcessInfo()
     cout << "box size: " << boardUtil::global_boxes_in_level <<endl;
     cout << "sokoban pos: ";
     print(boardUtil::global_initial_player);
+
+    printIndex();
 
     cout << "inner:\n";
     board in;
@@ -269,12 +300,20 @@ static void printAfterPreProcessInfo()
     getForBiddenTunnelMat(forb);
     print(forb);
     cout << "=======================\n";
+
+    cout << "impossible:\n";
+    board imp;
+    getImpossibleMat(imp);
+    print(imp);
+    cout << "=======================\n";
 }
 
 bool PreProcess::preprocess_level(board &b)
 {
     if (sanity_checks(b) == false)
         return false;
+
+    boardUtil::save_initial_board(b);
 
     turn_decorative_boxes_to_walls(b);
     close_holes_in_board(b);
@@ -286,11 +325,9 @@ bool PreProcess::preprocess_level(board &b)
     boardUtil::save_initial_board(b);
     boardUtil::expand_sokoban_cloud(b);
 
-
     deadlock::set_forbidden_tunnel();
 
     set_distances(b);
-
 #ifndef NDEBUG
     printAfterPreProcessInfo();
 #endif
